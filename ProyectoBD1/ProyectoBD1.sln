@@ -1,13 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.13
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "CapaDatos\CapaDatos.csproj", "{0A140D6A-C55D-40D9-95A5-4B45585BB19C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaLogica", "CapaLogica\CapaLogica.csproj", "{DFFB8A28-0E77-4EC8-8EE6-91A4B31CA806}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0A140D6A-C55D-40D9-95A5-4B45585BB19C} = {0A140D6A-C55D-40D9-95A5-4B45585BB19C}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaPresentacion", "CapaPresentacion\CapaPresentacion.csproj", "{A79A5968-5550-4284-B547-07668EC63D47}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DFFB8A28-0E77-4EC8-8EE6-91A4B31CA806} = {DFFB8A28-0E77-4EC8-8EE6-91A4B31CA806}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
