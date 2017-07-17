@@ -66,16 +66,7 @@ namespace CapaPresentacion
         {
         }
 
-        private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            toolStrip.Visible = toolBarToolStripMenuItem.Checked;
-        }
-
-        private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            statusStrip.Visible = statusBarToolStripMenuItem.Checked;
-        }
-
+  
         private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             LayoutMdi(MdiLayout.Cascade);
@@ -102,6 +93,41 @@ namespace CapaPresentacion
             {
                 childForm.Close();
             }
+        }
+
+        private void fileMenu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reservacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Reservaciones reservaciones = new Reservaciones();
+            reservaciones.Show();
+        }
+
+        private void peliculasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Peliculas peliculas = new Peliculas();
+            peliculas.Show();
+        }
+
+        private void salasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Salas salas = new Salas();
+            salas.Show();
+        }
+
+        private void promocionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Promociones promociones = new Promociones();
+            promociones.Show();
+        }
+
+        private void reportesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Reportes reportes = new Reportes();
+            reportes.Show();
         }
     }
 }
