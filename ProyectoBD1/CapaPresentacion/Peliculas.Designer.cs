@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Peliculas));
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.txtfechaestreno = new System.Windows.Forms.TextBox();
             this.txtfechafin = new System.Windows.Forms.TextBox();
@@ -40,6 +42,7 @@
             this.btnagregar = new System.Windows.Forms.Button();
             this.btnborar = new System.Windows.Forms.Button();
             this.btnmodificar = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
             // txtnombre
@@ -144,11 +147,17 @@
             this.btnmodificar.Text = "Modificar";
             this.btnmodificar.UseVisualStyleBackColor = true;
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "Rollo Pelicula.png");
+            // 
             // Peliculas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(253, 273);
+            this.ClientSize = new System.Drawing.Size(253, 269);
             this.Controls.Add(this.btnmodificar);
             this.Controls.Add(this.btnborar);
             this.Controls.Add(this.btnagregar);
@@ -182,5 +191,6 @@
         private System.Windows.Forms.Button btnagregar;
         private System.Windows.Forms.Button btnborar;
         private System.Windows.Forms.Button btnmodificar;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
