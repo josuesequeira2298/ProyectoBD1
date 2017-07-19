@@ -104,6 +104,7 @@ namespace CapaPresentacion
         {
             Reservaciones reservaciones = new Reservaciones();
             reservaciones.Show();
+            
         }
 
         private void peliculasToolStripMenuItem_Click(object sender, EventArgs e)
