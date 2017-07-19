@@ -117,6 +117,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Reservaciones.resx">
+      <DependentUpon>Reservaciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Salas.resx">
       <DependentUpon>Salas.cs</DependentUpon>
     </EmbeddedResource>
