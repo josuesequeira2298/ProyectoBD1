@@ -8,5 +8,7 @@ namespace CapaDatos
 {
     class clsConexionBD
     {
+
+
     }
 }
