@@ -54,5 +54,13 @@ namespace CapaPresentacion
         {
             Limpiar();
         }
+
+        private void btnconsultar_Click(object sender, EventArgs e)
+        {
+            CapaNegocio.Peliculas peliculas = new CapaNegocio.Peliculas();
+
+            peliculas.buscar(Int32.Parse(txtidpelicula.Text));
+
+        }
     }
 }

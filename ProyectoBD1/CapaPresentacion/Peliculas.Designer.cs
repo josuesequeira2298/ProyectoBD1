@@ -104,6 +104,7 @@
             this.btnconsultar.TabIndex = 6;
             this.btnconsultar.Text = "Consultar";
             this.btnconsultar.UseVisualStyleBackColor = true;
+            this.btnconsultar.Click += new System.EventHandler(this.btnconsultar_Click);
             // 
             // label4
             // 
@@ -169,7 +170,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(253, 316);
+            this.ClientSize = new System.Drawing.Size(253, 312);
             this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.btnmodificar);
             this.Controls.Add(this.btnborar);

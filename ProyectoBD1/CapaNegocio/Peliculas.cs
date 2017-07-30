@@ -15,5 +15,11 @@ namespace CapaNegocio
             return new CapaDatos.Peliculas().insertarpelicula(idPelicula, Nombre, Fecha_Estreno, Fecha_Salida);
 
         }
+
+        public DataTable buscar (int idpelicula)
+        {
+            CapaDatos.Peliculas peliculas = new CapaDatos.Peliculas();
+            return peliculas.buscar(idpelicula);
+        }
     }
 }

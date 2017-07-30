@@ -23,5 +23,12 @@ namespace CapaDatos
             }
             return false;   
         }
+
+        public DataTable buscar(int idpelicula)
+        {
+            DataTable dtpeliculas;
+            dtpeliculas = conect.ejecutar(" select idPelicula, Nombre,Fecha_Estreno,Fecha_Salida from Pelicula where idPelicula = (" + idpelicula + ") ");
+            return dtpeliculas;
+        }
     }
 }
