@@ -34,7 +34,7 @@ namespace CapaDatos
             }
             return false;
         }
-        public bool eliminarreservacion(int idReservacion, string Nombre_Cliente, int Cantidad_Asientos, string Fehca, int cartelea, int Cartelera_Pelicula_idPelicula, int Cartelera_Sala_Tipo_Sala_idTipo_Sala)
+        public bool eliminarreservacion(int idReservacion)
         {
             bool eliminarreservacion;
 
