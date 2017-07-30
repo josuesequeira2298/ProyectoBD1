@@ -44,6 +44,8 @@
             this.btnmodificar = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnlimpiar = new System.Windows.Forms.Button();
+            this.dtgpeliculas = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgpeliculas)).BeginInit();
             this.SuspendLayout();
             // 
             // txtnombre
@@ -168,11 +170,20 @@
             this.btnlimpiar.UseVisualStyleBackColor = true;
             this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
             // 
+            // dtgpeliculas
+            // 
+            this.dtgpeliculas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgpeliculas.Location = new System.Drawing.Point(270, 13);
+            this.dtgpeliculas.Name = "dtgpeliculas";
+            this.dtgpeliculas.Size = new System.Drawing.Size(324, 282);
+            this.dtgpeliculas.TabIndex = 13;
+            // 
             // Peliculas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(253, 312);
+            this.ClientSize = new System.Drawing.Size(606, 323);
+            this.Controls.Add(this.dtgpeliculas);
             this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.btnmodificar);
             this.Controls.Add(this.btnborar);
@@ -188,6 +199,7 @@
             this.Controls.Add(this.txtnombre);
             this.Name = "Peliculas";
             this.Text = "Peliculas";
+            ((System.ComponentModel.ISupportInitialize)(this.dtgpeliculas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,5 +221,6 @@
         private System.Windows.Forms.Button btnmodificar;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button btnlimpiar;
+        private System.Windows.Forms.DataGridView dtgpeliculas;
     }
 }
