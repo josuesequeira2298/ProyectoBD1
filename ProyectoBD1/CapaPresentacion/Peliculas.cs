@@ -31,12 +31,15 @@ namespace CapaPresentacion
         {
             CapaNegocio.Peliculas pelicula = new CapaNegocio.Peliculas();
 
-            if(pelicula.insertarpelicula(Int32.Parse(txtidpelicula.Text), txtnombre.Text, txtfechaestreno.Text, txtfechafin.Text))
+            if (pelicula.insertarpelicula(Int32.Parse(txtidpelicula.Text), txtnombre.Text, txtfechaestreno.Text, txtfechafin.Text))
             {
-                MessageBox.Show("Birra para todos si sirvió");
+                MessageBox.Show("Película agregada correctamente");
                 Limpiar();
             }
-            MessageBox.Show("Playos más tontos, no sirve");
+            else
+            {
+                MessageBox.Show("Error");
+            }
         }
 
         private void Limpiar()
