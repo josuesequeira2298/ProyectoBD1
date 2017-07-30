@@ -23,7 +23,7 @@ namespace CapaPresentacion
             
             try
             {
-                Cartelera.insertarCartelera(Int32.Parse(txtidcartelera.Text), Int32.Parse(txtidpelicula.Text),Int32.Parse(txtidsala.Text), Int32.Parse(txtfecha.Text),Int32.Parse(txthoraini.Text), Int32.Parse(txthorafin.Text));
+                Cartelera.insertarCartelera(Int32.Parse(txtidcartelera.Text), Int32.Parse(txtidpelicula.Text),Int32.Parse(txtidsala.Text), txtfecha.Text,txthoraini.Text, txthorafin.Text);
 
                 MessageBox.Show("Cartelera agregada correctamente");
                 Limpiar();
@@ -32,7 +32,7 @@ namespace CapaPresentacion
             catch (Exception ex)
             {
 
-                MessageBox.Show("Este ID ya existe");
+                MessageBox.Show("Error Desconocido");
                 Limpiar();
             }
         }
@@ -42,14 +42,14 @@ namespace CapaPresentacion
             CapaNegocio.Cartelera Cartelera = new CapaNegocio.Cartelera();
             DataTable dtCartelera = new DataTable();
 
-            dtCartelera = Cartelera.buscar(Int32.Parse(txtidpelicula.Text));
+            dtCartelera = Cartelera.buscar(Int32.Parse(txtidcartelera.Text));
             dtgcartelera.DataSource = dtCartelera;
         }
 
         private void btnmodificar_Click(object sender, EventArgs e)
         {
             CapaNegocio.Cartelera Cartelera = new CapaNegocio.Cartelera();
-            if (Cartelera.actualizarCartelera(Int32.Parse(txtidcartelera.Text), Int32.Parse(txtidpelicula.Text), Int32.Parse(txtidsala.Text), Int32.Parse(txtfecha.Text), Int32.Parse(txthoraini.Text), Int32.Parse(txthorafin.Text)))
+            if (Cartelera.actualizarCartelera(Int32.Parse(txtidcartelera.Text), Int32.Parse(txtidpelicula.Text), Int32.Parse(txtidsala.Text), txtfecha.Text, txthoraini.Text, txthorafin.Text))
             {
                 MessageBox.Show("Cartelera modificada correctamente");
                 Limpiar();

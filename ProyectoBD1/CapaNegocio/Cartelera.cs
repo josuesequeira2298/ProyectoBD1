@@ -9,7 +9,7 @@ namespace CapaNegocio
 {
     public class Cartelera
     {
-        public bool insertarCartelera(int idCartelera, int idPelicula, int idsala, int fecha, int Horaini, int Horafin)
+        public bool insertarCartelera(int idCartelera, int idPelicula, int idsala, string fecha, string Horaini, string Horafin)
         {
             return new CapaDatos.Cartelera().insertarCartelera(idCartelera, idPelicula, idsala, fecha, Horaini, Horafin);
 
@@ -27,7 +27,7 @@ namespace CapaNegocio
         }
 
 
-        public bool actualizarCartelera(int idCartelera, int idPelicula, int idsala, int fecha, int Horaini, int Horafin)
+        public bool actualizarCartelera(int idCartelera, int idPelicula, int idsala, string fecha, string Horaini, string Horafin)
         {
             return new CapaDatos.Cartelera().actualizarCartelera(idCartelera, idPelicula, idsala, fecha, Horaini, Horafin);
         }

@@ -12,7 +12,7 @@ namespace CapaDatos
         clsConexion conect = new clsConexion();
         clsConexion consultar = new clsConexion();
 
-        public bool insertarCartelera(int idCartelera, int idPelicula, int idsala, int fecha, int Horaini, int Horafin )
+        public bool insertarCartelera(int idCartelera, int idPelicula, int idsala, string fecha, string Horaini, string Horafin )
         {
             bool creandocartelera;
 
@@ -42,7 +42,7 @@ namespace CapaDatos
             return dtCartelera;
         }
 
-        public bool actualizarCartelera(int idCartelera, int idPelicula, int idsala, int fecha, int Horaini, int Horafin)
+        public bool actualizarCartelera(int idCartelera, int idPelicula, int idsala, string fecha, string Horaini, string Horafin)
         {
             bool actualizandoCartelera;
 
