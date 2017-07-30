@@ -84,5 +84,21 @@ namespace CapaPresentacion
         {
             Limpiar();
         }
+
+        private void btneliminar_Click(object sender, EventArgs e)
+        {
+            CapaNegocio.Cartelera Cartelera = new CapaNegocio.Cartelera();
+            try
+            {
+                Cartelera.eliminarCartelera(Int32.Parse(txtidcartelera.Text));
+
+                MessageBox.Show("Cartelera Eliminada");
+                Limpiar();
+            }
+            catch
+            {
+                MessageBox.Show("Error Desconocido");
+            }
+        }
     }
 }

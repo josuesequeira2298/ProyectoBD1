@@ -31,9 +31,9 @@ namespace CapaNegocio
         {
             return new CapaDatos.Cartelera().actualizarCartelera(idCartelera, idPelicula, idsala, fecha, Horaini, Horafin);
         }
-        public bool eliminarCartelera(int idCartelera, int idPelicula, int idsala, int fecha, int Horaini, int Horafin)
+        public bool eliminarCartelera(int idCartelera)
         {
-            return new CapaDatos.Cartelera().eliminarCartelera(idCartelera, idPelicula, idsala, fecha, Horaini, Horafin);
+            return new CapaDatos.Cartelera().eliminarCartelera(idCartelera);
         }
     }
 }

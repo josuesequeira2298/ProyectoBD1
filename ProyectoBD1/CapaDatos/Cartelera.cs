@@ -54,7 +54,7 @@ namespace CapaDatos
             return false;
         }
 
-        public bool eliminarCartelera(int idCartelera, int idPelicula, int idsala, int fecha, int Horaini, int Horafin)
+        public bool eliminarCartelera(int idCartelera)
         {
             bool eliminarCartelera;
             eliminarCartelera = conect.ejecutarInsert("DELETE Cartelera FROM Cartelera where idCartelera = " + idCartelera + "");
