@@ -35,7 +35,7 @@ namespace CapaDatos
         {
             bool actualizandopeli;
 
-            actualizandopeli = conect.ejecutarInsert("update");
+            actualizandopeli = conect.ejecutarInsert("UPDATE Pelicula SET Nombre = '"+Nombre+"', Fecha_Estreno ='"+Fecha_Estreno+"', Fecha_Salida ='"+Fecha_Salida+"' where idPelicula = "+ idPelicula +"");
             if (actualizandopeli)
             {
                 return true;

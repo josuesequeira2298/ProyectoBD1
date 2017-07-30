@@ -62,7 +62,7 @@ namespace CapaPresentacion
             DataTable dtPeliculas = new DataTable();
 
             dtPeliculas = peliculas.buscar(Int32.Parse(txtidpelicula.Text));
-             DataSource = dtPeliculas;
+            //DataSource = dtPeliculas;
         }
 
         private void btnmodificar_Click(object sender, EventArgs e)
