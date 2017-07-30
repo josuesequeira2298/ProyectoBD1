@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace CapaDatos
 {
@@ -27,10 +28,14 @@ namespace CapaDatos
 
         public DataTable buscar(int idpelicula)
         {
-            DataTable dtPeliculas = new DataTable();
+            SqlCommand _comando = clsConexion.CrearComandoProc();
+            _comando.CommandText = "Select * from Pelicula";
+            return clsConexion
+
+            //DataTable dtPeliculas = new DataTable();
             
-            dtPeliculas = conect.ejecutar("select Nombre,Fecha_Estreno,Fecha_Salida from Pelicula where idPelicula = " + idpelicula);
-            return dtPeliculas;
+            //dtPeliculas = conect.ejecutar("select Nombre,Fecha_Estreno,Fecha_Salida from Pelicula where idPelicula = " + idpelicula);
+            //return dtPeliculas;
         }
 
         //public DataTable Pelicula(int idPelicula)

@@ -59,13 +59,8 @@ namespace CapaPresentacion
         private void btnconsultar_Click(object sender, EventArgs e)
         {
             CapaNegocio.Peliculas peliculas = new CapaNegocio.Peliculas();
-            DataTable dtPeliculas = new DataTable();
-
-            dtPeliculas = peliculas.buscar(Int32.Parse(txtidpelicula.Text));
-
-            txtnombre.Text.ToString() = dtPeliculas;
-            
-
+            dtgpeliculas.DataSource = peliculas.buscarPelicula(Int32.Parse(txtidpelicula.Text));
+            dtgpeliculas.DataBind();
         }
 
         private void btnmodificar_Click(object sender, EventArgs e)
