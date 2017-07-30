@@ -50,7 +50,7 @@ namespace CapaPresentacion
 
         private void btnactualizar_Click(object sender, EventArgs e)
         {
-            CapaNegocio.Reservacion reservacion = new CapaNegocio.Reservacion;
+            CapaNegocio.Reservacion reservacion = new CapaNegocio.Reservacion();
 
             if (reservacion.modifireser(Int32.Parse(txtidreservacion.Text), txtnombrecliente.Text, Int32.Parse(txtcantasientos.Text), txtfechareser.Text, cbxactiva.Text, Int32.Parse(txtidcartelera.Text), Int32.Parse(txtidpelicula.Text), Int32.Parse(txtidtiposala.Text)))
             {
@@ -59,8 +59,9 @@ namespace CapaPresentacion
             }
             else
             {
-                MessageBox.Show("Error Desconocido")
+                MessageBox.Show("Error Desconocido");
             }
+            
         }
 
         private void btneliminar_Click(object sender, EventArgs e)
