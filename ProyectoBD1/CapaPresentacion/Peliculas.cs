@@ -48,8 +48,6 @@ namespace CapaPresentacion
                 Limpiar();
             }
 
-
-
         }
 
         private void Limpiar()
@@ -102,6 +100,16 @@ namespace CapaPresentacion
             {
                 MessageBox.Show("Error Desconocido");
             }
+        }
+
+        private void btnConsultarTodo_Click(object sender, EventArgs e)
+        {
+            CapaNegocio.Peliculas peliculas = new CapaNegocio.Peliculas();
+            DataTable dtPeliculas = new DataTable();
+
+            dtPeliculas = peliculas.BuscarPeliculas();
+            dtgpeliculas.DataSource = dtPeliculas;
+
         }
     }
 }

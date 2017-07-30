@@ -25,20 +25,21 @@ namespace CapaDatos
             return false;
         }
 
-        //public DataTable buscar(int idpelicula)
-        //{
-        //    DataTable dtPeliculas = new DataTable();
-
-        //    dtPeliculas = conect.ejecutar("select Nombre,Fecha_Estreno,Fecha_Salida from Pelicula where idPelicula = " + idpelicula);
-        //    return dtPeliculas;
-        //}
-
+        
         public DataTable Cargarpelicula(int idPelicula)
         {
             CapaDatos.clsConexion conecta = new CapaDatos.clsConexion();
             DataTable dtPelicula;
             dtPelicula = conecta.ejecutar("select * from Pelicula where idPelicula = " + idPelicula);
             return dtPelicula;
+        }
+
+        public DataTable CargarPeliculas()
+        {
+            CapaDatos.clsConexion conecta = new CapaDatos.clsConexion();
+            DataTable dtPeliculas;
+            dtPeliculas = conecta.ejecutar("select * from Pelicula");
+            return dtPeliculas;
         }
 
         public bool actualizarpelicula(int idPelicula, string Nombre, string Fecha_Estreno, string Fecha_Salida)

@@ -19,29 +19,15 @@ namespace CapaNegocio
         }
 
 
-        //-------------------------------------------------
         public DataTable buscar(int idpelicula)
         {
             return new CapaDatos.Peliculas().Cargarpelicula(idpelicula);
         }
 
-        //-------------------------------------------------
-        //public DataTable buscarPelicula(int idPelicula)
-        //{
-        //    DataTable dt = new DataTable();
-
-
-        //    dt = buscarPelicula(idPelicula);
-        //    return dt;
-        //}
-        ////-------------------------------------------------
-
-        //public DataTable buscarPelicula(int idPelicula, string Nombre, string Fecha_Estreno, string Fecha_Salida)
-        //{
-        //    return new CapaDatos.Peliculas().buscar(idPelicula);
-        //}
-
-        //-------------------------------------------------
+        public DataTable BuscarPeliculas()
+        {
+            return new CapaDatos.Peliculas().CargarPeliculas();
+        }
 
 
         public bool actualizarpelicula(int idPelicula, string Nombre, string Fecha_Estreno, string Fecha_Salida)
