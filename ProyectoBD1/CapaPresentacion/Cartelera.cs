@@ -20,8 +20,7 @@ namespace CapaPresentacion
         private void btnagregar_Click(object sender, EventArgs e)
         {
             CapaNegocio.Cartelera Cartelera = new CapaNegocio.Cartelera();
-
-
+            
             try
             {
                 Cartelera.insertarCartelera(Int32.Parse(txtidcartelera.Text), Int32.Parse(txtidpelicula.Text),Int32.Parse(txtidsala.Text), Int32.Parse(txtfecha.Text),Int32.Parse(txthoraini.Text), Int32.Parse(txthorafin.Text));
