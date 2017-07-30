@@ -13,6 +13,15 @@ namespace CapaNegocio
         {
             return new CapaDatos.Sala().insertarsala(idsala, idtiposala, Descripcion, asientos);
         }
+        public DataTable buscar(int idsala)
+        {
+            return new CapaDatos.Sala().CargarSala(idsala);
+        }
+
+        public DataTable BuscarSalas()
+        {
+            return new CapaDatos.Sala().CargarSalas();
+        }
 
         public bool actualizarsala(int idsala, int idtiposala, string Descripcion, int asientos)
         {

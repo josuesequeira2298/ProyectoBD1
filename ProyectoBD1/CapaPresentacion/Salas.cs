@@ -21,11 +21,15 @@ namespace CapaPresentacion
         {
             CapaNegocio.Sala sala = new CapaNegocio.Sala();
 
-            if (sala.insertarsala(Int32.Parse(txtidsala.Text), Int32.Parse(txtidtiposala.Text), txtdescripcion.Text, Int32.Parse(txtasientos.Text)))
+            try
             {
+                sala.insertarsala(Int32.Parse(txtidsala.Text), Int32.Parse(txtidtiposala.Text), txtdescripcion.Text, Int32.Parse(txtasientos.Text));
+
+
                 MessageBox.Show("Sala Agregada correctamente");
                 Limpiar();
-            }else
+            }
+            catch
             {
                 MessageBox.Show("Error Desconocido");
             }
@@ -62,15 +66,37 @@ namespace CapaPresentacion
         private void btnborrar_Click(object sender, EventArgs e)
         {
             CapaNegocio.Sala sala = new CapaNegocio.Sala();
-            if(sala.eliminarsala(Int32.Parse(txtidsala.Text), Int32.Parse(txtidtiposala.Text), txtdescripcion.Text, Int32.Parse(txtasientos.Text)))
+            try
             {
+                sala.eliminarsala(Int32.Parse(txtidsala.Text), Int32.Parse(txtidtiposala.Text), txtdescripcion.Text, Int32.Parse(txtasientos.Text));
+
+
                 MessageBox.Show("Sala Eliminada");
                 Limpiar();
             }
-            else
+            catch
             {
                 MessageBox.Show("Error Desconocido");
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CapaNegocio.Sala salas = new CapaNegocio.Sala();
+            DataTable dtSalas = new DataTable();
+
+            dtSalas = salas.BuscarSalas();
+            dtgSalas.DataSource = dtSalas;
+
+        }
+
+        private void btnconsultar_Click(object sender, EventArgs e)
+        {
+            CapaNegocio.Sala salas = new CapaNegocio.Sala();
+            DataTable dtSalas = new DataTable();
+
+            dtSalas = salas.buscar(Int32.Parse(txtidsala.Text));
+            dtgSalas.DataSource = dtSalas;
         }
     }
 }
