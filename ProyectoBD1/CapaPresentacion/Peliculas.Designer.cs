@@ -43,6 +43,7 @@
             this.btnborar = new System.Windows.Forms.Button();
             this.btnmodificar = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.btnlimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtnombre
@@ -154,11 +155,22 @@
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "Rollo Pelicula.png");
             // 
+            // btnlimpiar
+            // 
+            this.btnlimpiar.Location = new System.Drawing.Point(81, 272);
+            this.btnlimpiar.Name = "btnlimpiar";
+            this.btnlimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnlimpiar.TabIndex = 12;
+            this.btnlimpiar.Text = "Limpiar";
+            this.btnlimpiar.UseVisualStyleBackColor = true;
+            this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
+            // 
             // Peliculas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(253, 269);
+            this.ClientSize = new System.Drawing.Size(253, 316);
+            this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.btnmodificar);
             this.Controls.Add(this.btnborar);
             this.Controls.Add(this.btnagregar);
@@ -193,5 +205,6 @@
         private System.Windows.Forms.Button btnborar;
         private System.Windows.Forms.Button btnmodificar;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Button btnlimpiar;
     }
 }

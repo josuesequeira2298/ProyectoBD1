@@ -46,5 +46,10 @@ namespace CapaPresentacion
             txtfechaestreno.Text = " ";
             txtfechafin.Text = " ";
         }
+
+        private void btnlimpiar_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
     }
 }
