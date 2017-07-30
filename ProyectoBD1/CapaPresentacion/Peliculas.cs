@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Resources;
 
 namespace CapaPresentacion
 {
@@ -58,9 +59,10 @@ namespace CapaPresentacion
         private void btnconsultar_Click(object sender, EventArgs e)
         {
             CapaNegocio.Peliculas peliculas = new CapaNegocio.Peliculas();
+            DataTable dtPeliculas = new DataTable();
 
-            peliculas.buscar(Int32.Parse(txtidpelicula.Text));
-
+            dtPeliculas = peliculas.buscar(Int32.Parse(txtidpelicula.Text));
+             DataSource = dtPeliculas;
         }
     }
 }
