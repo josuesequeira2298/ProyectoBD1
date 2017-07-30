@@ -23,7 +23,7 @@ namespace CapaDatos
             }
             return false;
         }
-        public bool actualizarsala (int idsala, int asientos, int idtiposala)
+        public bool actualizarsala (int idsala, int idtiposala, int asientos)
         {
             bool actualizandosala;
 
@@ -38,7 +38,7 @@ namespace CapaDatos
         {
             bool eliminarsala;
 
-            eliminarsala = conect.ejecutarInsert("DELETE Sala FROM Sala where idSalas =" +idsala);
+            eliminarsala = conect.ejecutarInsert("DELETE Sala FROM Sala where idSalas =" +idsala+"");
             if (eliminarsala)
             {
                 return true;
@@ -49,7 +49,7 @@ namespace CapaDatos
         {
             CapaDatos.clsConexion conecta = new CapaDatos.clsConexion();
             DataTable dtSala;
-            dtSala = conecta.ejecutar("select * from Sala ="  + idsala);
+            dtSala = conecta.ejecutar("select * from Sala where idSalas ="  + idsala);
             return dtSala;
         }
 

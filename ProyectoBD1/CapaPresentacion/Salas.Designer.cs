@@ -128,7 +128,7 @@
             this.btnborrar.Name = "btnborrar";
             this.btnborrar.Size = new System.Drawing.Size(100, 28);
             this.btnborrar.TabIndex = 10;
-            this.btnborrar.Text = "Borrar";
+            this.btnborrar.Text = "Eliminar";
             this.btnborrar.UseVisualStyleBackColor = true;
             this.btnborrar.Click += new System.EventHandler(this.btnborrar_Click);
             // 
@@ -171,14 +171,14 @@
             this.dtgSalas.Location = new System.Drawing.Point(311, 7);
             this.dtgSalas.Name = "dtgSalas";
             this.dtgSalas.RowTemplate.Height = 24;
-            this.dtgSalas.Size = new System.Drawing.Size(375, 333);
+            this.dtgSalas.Size = new System.Drawing.Size(460, 333);
             this.dtgSalas.TabIndex = 13;
             // 
             // Salas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(688, 342);
+            this.ClientSize = new System.Drawing.Size(777, 374);
             this.Controls.Add(this.dtgSalas);
             this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.btnmodificar);

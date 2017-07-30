@@ -50,9 +50,10 @@ namespace CapaPresentacion
         private void btnmodificar_Click(object sender, EventArgs e)
         {
             CapaNegocio.Sala sala = new CapaNegocio.Sala();
-            try{
+            try
+            {
                 sala.actualizarsala(Int32.Parse(txtidsala.Text), Int32.Parse(txtidtiposala.Text), Int32.Parse(txtasientos.Text));
-            
+
                 MessageBox.Show("Sala Modificada correctamente");
                 Limpiar();
             }
