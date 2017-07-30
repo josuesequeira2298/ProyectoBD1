@@ -48,6 +48,8 @@
             this.txtidreservacion = new System.Windows.Forms.TextBox();
             this.btnlimpiar = new System.Windows.Forms.Button();
             this.btneliminar = new System.Windows.Forms.Button();
+            this.dtgreservaciones = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgreservaciones)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -221,11 +223,20 @@
             this.btneliminar.UseVisualStyleBackColor = true;
             this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
+            // dtgreservaciones
+            // 
+            this.dtgreservaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgreservaciones.Location = new System.Drawing.Point(361, 22);
+            this.dtgreservaciones.Name = "dtgreservaciones";
+            this.dtgreservaciones.Size = new System.Drawing.Size(353, 313);
+            this.dtgreservaciones.TabIndex = 21;
+            // 
             // Reservaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(336, 355);
+            this.ClientSize = new System.Drawing.Size(726, 355);
+            this.Controls.Add(this.dtgreservaciones);
             this.Controls.Add(this.btneliminar);
             this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.txtidreservacion);
@@ -248,6 +259,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Reservaciones";
             this.Text = "Reservaciones";
+            ((System.ComponentModel.ISupportInitialize)(this.dtgreservaciones)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -275,5 +287,6 @@
         private System.Windows.Forms.TextBox txtidreservacion;
         private System.Windows.Forms.Button btnlimpiar;
         private System.Windows.Forms.Button btneliminar;
+        private System.Windows.Forms.DataGridView dtgreservaciones;
     }
 }
