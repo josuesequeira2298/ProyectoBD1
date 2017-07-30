@@ -47,5 +47,35 @@ namespace CapaPresentacion
         {
             Limpiar();
         }
+
+        private void btnactualizar_Click(object sender, EventArgs e)
+        {
+            CapaNegocio.Reservacion reservacion = new CapaNegocio.Reservacion;
+
+            if (reservacion.modifireser(Int32.Parse(txtidreservacion.Text), txtnombrecliente.Text, Int32.Parse(txtcantasientos.Text), txtfechareser.Text, cbxactiva.Text, Int32.Parse(txtidcartelera.Text), Int32.Parse(txtidpelicula.Text), Int32.Parse(txtidtiposala.Text)))
+            {
+                MessageBox.Show("Reservación Modificada");
+                Limpiar();
+            }
+            else
+            {
+                MessageBox.Show("Error Desconocido")
+            }
+        }
+
+        private void btneliminar_Click(object sender, EventArgs e)
+        {
+            CapaNegocio.Reservacion reservacion = new CapaNegocio.Reservacion();
+
+            if(reservacion.eliminarreser(Int32.Parse(txtidreservacion.Text), txtnombrecliente.Text, Int32.Parse(txtcantasientos.Text), txtfechareser.Text, cbxactiva.Text, Int32.Parse(txtidcartelera.Text), Int32.Parse(txtidpelicula.Text), Int32.Parse(txtidtiposala.Text)))
+            {
+                MessageBox.Show("Reservación Eliminada");
+                Limpiar();
+            }
+            else
+            {
+                MessageBox.Show("Error Desconocido");
+            }
+        }
     }
 }

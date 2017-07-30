@@ -42,5 +42,16 @@ namespace CapaDatos
             }
             return false;
         }
+
+        public bool eliminarpelicula(int idPelicula, string Nombre, string Fecha_Estreno, string Fecha_Salida)
+        {
+            bool eliminarpeli;
+            eliminarpeli = conect.ejecutarInsert("delete");
+            if (eliminarpeli)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

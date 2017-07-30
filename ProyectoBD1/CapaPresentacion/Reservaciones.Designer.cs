@@ -47,6 +47,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtidreservacion = new System.Windows.Forms.TextBox();
             this.btnlimpiar = new System.Windows.Forms.Button();
+            this.btneliminar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -157,7 +158,7 @@
             // 
             // btnreservar
             // 
-            this.btnreservar.Location = new System.Drawing.Point(60, 263);
+            this.btnreservar.Location = new System.Drawing.Point(23, 263);
             this.btnreservar.Name = "btnreservar";
             this.btnreservar.Size = new System.Drawing.Size(75, 23);
             this.btnreservar.TabIndex = 14;
@@ -167,7 +168,7 @@
             // 
             // btnconsultar
             // 
-            this.btnconsultar.Location = new System.Drawing.Point(183, 263);
+            this.btnconsultar.Location = new System.Drawing.Point(236, 263);
             this.btnconsultar.Name = "btnconsultar";
             this.btnconsultar.Size = new System.Drawing.Size(75, 23);
             this.btnconsultar.TabIndex = 15;
@@ -176,12 +177,13 @@
             // 
             // btnactualizar
             // 
-            this.btnactualizar.Location = new System.Drawing.Point(60, 312);
+            this.btnactualizar.Location = new System.Drawing.Point(23, 312);
             this.btnactualizar.Name = "btnactualizar";
             this.btnactualizar.Size = new System.Drawing.Size(75, 23);
             this.btnactualizar.TabIndex = 16;
             this.btnactualizar.Text = "Actualizar";
             this.btnactualizar.UseVisualStyleBackColor = true;
+            this.btnactualizar.Click += new System.EventHandler(this.btnactualizar_Click);
             // 
             // label4
             // 
@@ -201,7 +203,7 @@
             // 
             // btnlimpiar
             // 
-            this.btnlimpiar.Location = new System.Drawing.Point(183, 312);
+            this.btnlimpiar.Location = new System.Drawing.Point(236, 312);
             this.btnlimpiar.Name = "btnlimpiar";
             this.btnlimpiar.Size = new System.Drawing.Size(75, 23);
             this.btnlimpiar.TabIndex = 19;
@@ -209,11 +211,22 @@
             this.btnlimpiar.UseVisualStyleBackColor = true;
             this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
             // 
+            // btneliminar
+            // 
+            this.btneliminar.Location = new System.Drawing.Point(132, 286);
+            this.btneliminar.Name = "btneliminar";
+            this.btneliminar.Size = new System.Drawing.Size(75, 23);
+            this.btneliminar.TabIndex = 20;
+            this.btneliminar.Text = "Eliminar";
+            this.btneliminar.UseVisualStyleBackColor = true;
+            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
+            // 
             // Reservaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(336, 355);
+            this.Controls.Add(this.btneliminar);
             this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.txtidreservacion);
             this.Controls.Add(this.label4);
@@ -261,5 +274,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtidreservacion;
         private System.Windows.Forms.Button btnlimpiar;
+        private System.Windows.Forms.Button btneliminar;
     }
 }

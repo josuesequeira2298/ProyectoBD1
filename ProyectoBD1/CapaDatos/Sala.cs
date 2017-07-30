@@ -34,5 +34,16 @@ namespace CapaDatos
             }
             return false;
         }
+        public bool eliminarsala(int idsala, int idtiposala, string Descripcion, int asientos)
+        {
+            bool eliminarsala;
+
+            eliminarsala = conect.ejecutarInsert("Delete");
+            if (eliminarsala)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

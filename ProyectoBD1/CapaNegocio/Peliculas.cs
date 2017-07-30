@@ -26,5 +26,9 @@ namespace CapaNegocio
         {
             return new CapaDatos.Peliculas().actualizarpelicula(idPelicula, Nombre, Fecha_Estreno, Fecha_Salida);
         }
+        public bool eliminarpelicula(int idPelicula, string Nombre, string Fecha_Estreno, string Fecha_Salida)
+        {
+            return new CapaDatos.Peliculas().eliminarpelicula(idPelicula, Nombre, Fecha_Estreno, Fecha_Salida);
+        }
     }
 }

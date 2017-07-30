@@ -78,5 +78,18 @@ namespace CapaPresentacion
                 MessageBox.Show("Error Desconocido");
             }
         }
+
+        private void btnborar_Click(object sender, EventArgs e)
+        {
+            CapaNegocio.Peliculas peliculas = new CapaNegocio.Peliculas();
+            if(peliculas.eliminarpelicula(Int32.Parse(txtidpelicula.Text), txtnombre.Text, txtfechaestreno.Text, txtfechafin.Text))
+            {
+                MessageBox.Show("Pelicula Eliminada");
+                Limpiar();
+            }else
+            {
+                MessageBox.Show("Error Desconocido");
+            }
+        }
     }
 }

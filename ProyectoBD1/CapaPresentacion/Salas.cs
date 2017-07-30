@@ -58,5 +58,19 @@ namespace CapaPresentacion
             }
 
         }
+
+        private void btnborrar_Click(object sender, EventArgs e)
+        {
+            CapaNegocio.Sala sala = new CapaNegocio.Sala();
+            if(sala.eliminarsala(Int32.Parse(txtidsala.Text), Int32.Parse(txtidtiposala.Text), txtdescripcion.Text, Int32.Parse(txtasientos.Text)))
+            {
+                MessageBox.Show("Sala Eliminada");
+                Limpiar();
+            }
+            else
+            {
+                MessageBox.Show("Error Desconocido");
+            }
+        }
     }
 }
