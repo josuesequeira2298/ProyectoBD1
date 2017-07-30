@@ -10,7 +10,7 @@ namespace CapaDatos
 {
     public class clsConexion
     {
-        private SqlConnection oCN = new SqlConnection("Data Source=DESKTOP-JJF4ANO\\SQLEXPRESS; Initial Catalog=ProyectoBD; Integrated Security=True");
+        private SqlConnection oCN = new SqlConnection("Data Source=JOSU;Initial Catalog=ProyectoBD;Integrated Security=True");
 
         public bool abrirConexion()
         {
