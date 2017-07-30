@@ -48,31 +48,35 @@
             // 
             // txtnombre
             // 
-            this.txtnombre.Location = new System.Drawing.Point(129, 49);
+            this.txtnombre.Location = new System.Drawing.Point(172, 60);
+            this.txtnombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(100, 20);
+            this.txtnombre.Size = new System.Drawing.Size(132, 22);
             this.txtnombre.TabIndex = 0;
             // 
             // txtfechaestreno
             // 
-            this.txtfechaestreno.Location = new System.Drawing.Point(129, 87);
+            this.txtfechaestreno.Location = new System.Drawing.Point(172, 107);
+            this.txtfechaestreno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtfechaestreno.Name = "txtfechaestreno";
-            this.txtfechaestreno.Size = new System.Drawing.Size(100, 20);
+            this.txtfechaestreno.Size = new System.Drawing.Size(132, 22);
             this.txtfechaestreno.TabIndex = 1;
             // 
             // txtfechafin
             // 
-            this.txtfechafin.Location = new System.Drawing.Point(129, 125);
+            this.txtfechafin.Location = new System.Drawing.Point(172, 154);
+            this.txtfechafin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtfechafin.Name = "txtfechafin";
-            this.txtfechafin.Size = new System.Drawing.Size(100, 20);
+            this.txtfechafin.Size = new System.Drawing.Size(132, 22);
             this.txtfechafin.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 56);
+            this.label1.Location = new System.Drawing.Point(17, 69);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 13);
+            this.label1.Size = new System.Drawing.Size(62, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Nombre ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -80,27 +84,30 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 94);
+            this.label2.Location = new System.Drawing.Point(17, 116);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 13);
+            this.label2.Size = new System.Drawing.Size(120, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "Fecha de Estreno";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 132);
+            this.label3.Location = new System.Drawing.Point(17, 162);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 13);
+            this.label3.Size = new System.Drawing.Size(145, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "Fecha de Finalización";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // btnconsultar
             // 
-            this.btnconsultar.Location = new System.Drawing.Point(29, 179);
+            this.btnconsultar.Location = new System.Drawing.Point(39, 220);
+            this.btnconsultar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnconsultar.Name = "btnconsultar";
-            this.btnconsultar.Size = new System.Drawing.Size(75, 23);
+            this.btnconsultar.Size = new System.Drawing.Size(100, 28);
             this.btnconsultar.TabIndex = 6;
             this.btnconsultar.Text = "Consultar";
             this.btnconsultar.UseVisualStyleBackColor = true;
@@ -109,24 +116,27 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 13);
+            this.label4.Location = new System.Drawing.Point(17, 16);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
+            this.label4.Size = new System.Drawing.Size(74, 17);
             this.label4.TabIndex = 7;
             this.label4.Text = "ID Pelicula";
             // 
             // txtidpelicula
             // 
-            this.txtidpelicula.Location = new System.Drawing.Point(129, 13);
+            this.txtidpelicula.Location = new System.Drawing.Point(172, 16);
+            this.txtidpelicula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtidpelicula.Name = "txtidpelicula";
-            this.txtidpelicula.Size = new System.Drawing.Size(100, 20);
+            this.txtidpelicula.Size = new System.Drawing.Size(132, 22);
             this.txtidpelicula.TabIndex = 8;
             // 
             // btnagregar
             // 
-            this.btnagregar.Location = new System.Drawing.Point(129, 178);
+            this.btnagregar.Location = new System.Drawing.Point(172, 219);
+            this.btnagregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnagregar.Name = "btnagregar";
-            this.btnagregar.Size = new System.Drawing.Size(75, 23);
+            this.btnagregar.Size = new System.Drawing.Size(100, 28);
             this.btnagregar.TabIndex = 9;
             this.btnagregar.Text = "Agregar";
             this.btnagregar.UseVisualStyleBackColor = true;
@@ -134,9 +144,10 @@
             // 
             // btnborar
             // 
-            this.btnborar.Location = new System.Drawing.Point(29, 227);
+            this.btnborar.Location = new System.Drawing.Point(39, 279);
+            this.btnborar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnborar.Name = "btnborar";
-            this.btnborar.Size = new System.Drawing.Size(75, 23);
+            this.btnborar.Size = new System.Drawing.Size(100, 28);
             this.btnborar.TabIndex = 10;
             this.btnborar.Text = "Borrar";
             this.btnborar.UseVisualStyleBackColor = true;
@@ -144,9 +155,10 @@
             // 
             // btnmodificar
             // 
-            this.btnmodificar.Location = new System.Drawing.Point(129, 226);
+            this.btnmodificar.Location = new System.Drawing.Point(172, 278);
+            this.btnmodificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnmodificar.Name = "btnmodificar";
-            this.btnmodificar.Size = new System.Drawing.Size(75, 23);
+            this.btnmodificar.Size = new System.Drawing.Size(100, 28);
             this.btnmodificar.TabIndex = 11;
             this.btnmodificar.Text = "Modificar";
             this.btnmodificar.UseVisualStyleBackColor = true;
@@ -160,9 +172,10 @@
             // 
             // btnlimpiar
             // 
-            this.btnlimpiar.Location = new System.Drawing.Point(81, 272);
+            this.btnlimpiar.Location = new System.Drawing.Point(108, 335);
+            this.btnlimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnlimpiar.Name = "btnlimpiar";
-            this.btnlimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnlimpiar.Size = new System.Drawing.Size(100, 28);
             this.btnlimpiar.TabIndex = 12;
             this.btnlimpiar.Text = "Limpiar";
             this.btnlimpiar.UseVisualStyleBackColor = true;
@@ -170,9 +183,9 @@
             // 
             // Peliculas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(253, 312);
+            this.ClientSize = new System.Drawing.Size(337, 384);
             this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.btnmodificar);
             this.Controls.Add(this.btnborar);
@@ -186,6 +199,7 @@
             this.Controls.Add(this.txtfechafin);
             this.Controls.Add(this.txtfechaestreno);
             this.Controls.Add(this.txtnombre);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Peliculas";
             this.Text = "Peliculas";
             this.ResumeLayout(false);
