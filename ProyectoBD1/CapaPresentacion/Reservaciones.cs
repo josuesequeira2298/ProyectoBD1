@@ -68,7 +68,7 @@ namespace CapaPresentacion
         {
             CapaNegocio.Reservacion reservacion = new CapaNegocio.Reservacion();
 
-            if(reservacion.eliminarreser(Int32.Parse(txtidreservacion.Text), txtnombrecliente.Text, Int32.Parse(txtcantasientos.Text), txtfechareser.Text, Int32.Parse(txtidcartelera.Text), Int32.Parse(txtidpelicula.Text), Int32.Parse(txtidtiposala.Text)))
+            if(reservacion.eliminarreser(Int32.Parse(txtidreservacion.Text)))
             {
                 MessageBox.Show("Reservación Eliminada");
                 Limpiar();

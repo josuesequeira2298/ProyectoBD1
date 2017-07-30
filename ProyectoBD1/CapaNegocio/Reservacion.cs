@@ -18,9 +18,9 @@ namespace CapaNegocio
         {
             return new CapaDatos.Reservaciones().modifreservacion(idReservacion, Nombre_Cliente, Cantidad_Asientos, Fehca,  cartelea, Cartelera_Pelicula_idPelicula, Cartelera_Sala_Tipo_Sala_idTipo_Sala);
         }
-        public bool eliminarreser(int idReservacion, string Nombre_Cliente, int Cantidad_Asientos, string Fehca,  int cartelea, int Cartelera_Pelicula_idPelicula, int Cartelera_Sala_Tipo_Sala_idTipo_Sala)
+        public bool eliminarreser(int idReservacion)
         {
-            return new CapaDatos.Reservaciones().eliminarreservacion(idReservacion, Nombre_Cliente, Cantidad_Asientos, Fehca, cartelea, Cartelera_Pelicula_idPelicula, Cartelera_Sala_Tipo_Sala_idTipo_Sala);
+            return new CapaDatos.Reservaciones().eliminarreservacion(idReservacion);
         }
         public DataTable buscarreservacion(int idreservacion)
         {
