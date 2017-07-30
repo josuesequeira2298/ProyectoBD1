@@ -10,6 +10,8 @@ namespace CapaNegocio
 {
     public class Peliculas
     {
+        
+
         public bool insertarpelicula(int idPelicula, string Nombre, string Fecha_Estreno, string Fecha_Salida)
         {
             return new CapaDatos.Peliculas().insertarpelicula(idPelicula, Nombre, Fecha_Estreno, Fecha_Salida);
@@ -18,8 +20,23 @@ namespace CapaNegocio
 
         public DataTable buscar (int idpelicula)
         {
+
             CapaDatos.Peliculas peliculas = new CapaDatos.Peliculas();
             return peliculas.buscar(idpelicula);
+        }
+
+        //internal DataTable buscarPelicula(int idPelicula)
+        //{
+        //    DataTable dt = new DataTable();
+
+
+        //    dt = .buscarEstudiante(idPelicula);
+        //    return dt;
+        //}
+
+            public DataTable buscarPelicula(int idPelicula, string Nombre, string Fecha_Estreno, string Fecha_Salida)
+        {
+            return new CapaDatos.Peliculas().buscar(idPelicula);
         }
 
         public bool actualizarpelicula(int idPelicula, string Nombre, string Fecha_Estreno, string Fecha_Salida)

@@ -93,5 +93,16 @@ namespace CapaDatos
 
             }
         }
+        public DataTable consultar(String consulta)
+        {
+            abrirConexion();
+            SqlCommand comando = new SqlCommand(consulta, oCN);
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(comando);
+            SqlCommandBuilder commandBuilder = new SqlCommandBuilder(dataAdapter);
+            DataTable dt = new DataTable();
+            dataAdapter.Fill(dt);
+            cerrarConexion();
+            return dt;
+        }
     }
 }

@@ -27,9 +27,17 @@ namespace CapaDatos
         public DataTable buscar(int idpelicula)
         {
             DataTable dtpeliculas;
-            dtpeliculas = conect.ejecutar(" select idPelicula, Nombre,Fecha_Estreno,Fecha_Salida from Pelicula where idPelicula = (" + idpelicula + ") ");
+            dtpeliculas = conect.ejecutar("select Nombre,Fecha_Estreno,Fecha_Salida from Pelicula where idPelicula = " + idpelicula + " ");
             return dtpeliculas;
         }
+        //internal DataTable Pelicula(int idPelicula)
+        //{
+        //    DataTable dt = new DataTable();
+        //    string consulta = "select * from Pelicula where idPelicula = " + idPelicula;
+
+        //    dt = clsConexion.consultar(consulta);
+        //    return dt;
+        //}
 
         public bool actualizarpelicula(int idPelicula, string Nombre, string Fecha_Estreno, string Fecha_Salida)
         {
@@ -46,7 +54,7 @@ namespace CapaDatos
         public bool eliminarpelicula(int idPelicula, string Nombre, string Fecha_Estreno, string Fecha_Salida)
         {
             bool eliminarpeli;
-            eliminarpeli = conect.ejecutarInsert("delete");
+            eliminarpeli = conect.ejecutarInsert("DELETE Pelicula FROM Pelicula where idPelicula = " + idPelicula + "");
             if (eliminarpeli)
             {
                 return true;

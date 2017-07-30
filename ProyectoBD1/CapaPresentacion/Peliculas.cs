@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Resources;
+using System.Management;
 
 namespace CapaPresentacion
 {
@@ -62,7 +62,7 @@ namespace CapaPresentacion
             DataTable dtPeliculas = new DataTable();
 
             dtPeliculas = peliculas.buscar(Int32.Parse(txtidpelicula.Text));
-            //DataSource = dtPeliculas;
+            txtidpelicula.Text DataSource = dtPeliculas;
         }
 
         private void btnmodificar_Click(object sender, EventArgs e)
