@@ -26,5 +26,25 @@ namespace CapaPresentacion
         {
 
         }
+
+        private void btnagregar_Click(object sender, EventArgs e)
+        {
+            CapaNegocio.Peliculas pelicula = new CapaNegocio.Peliculas();
+
+            if(pelicula.insertarpelicula(Int32.Parse(txtidpelicula.Text), txtnombre.Text, txtfechaestreno.Text, txtfechafin.Text))
+            {
+                MessageBox.Show("Birra para todos si sirvió");
+                Limpiar();
+            }
+            MessageBox.Show("Playos más tontos, no sirve");
+        }
+
+        private void Limpiar()
+        {
+            txtidpelicula.Text = " ";
+            txtnombre.Text = " ";
+            txtfechaestreno.Text = " ";
+            txtfechafin.Text = " ";
+        }
     }
 }
