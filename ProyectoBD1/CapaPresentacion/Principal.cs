@@ -130,5 +130,11 @@ namespace CapaPresentacion
             Reportes reportes = new Reportes();
             reportes.Show();
         }
+
+        private void carteleraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cartelera Cartelera = new Cartelera();
+            Cartelera.Show();
+        }
     }
 }
