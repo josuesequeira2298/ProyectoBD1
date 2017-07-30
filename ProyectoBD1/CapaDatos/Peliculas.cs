@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-using System.Data.SqlClient;
 
 namespace CapaDatos
 {
@@ -26,26 +25,21 @@ namespace CapaDatos
             return false;
         }
 
-        public DataTable buscar(int idpelicula)
-        {
-            SqlCommand _comando = clsConexion.CrearComandoProc();
-            _comando.CommandText = "Select * from Pelicula";
-            return clsConexion
-
-            //DataTable dtPeliculas = new DataTable();
-            
-            //dtPeliculas = conect.ejecutar("select Nombre,Fecha_Estreno,Fecha_Salida from Pelicula where idPelicula = " + idpelicula);
-            //return dtPeliculas;
-        }
-
-        //public DataTable Pelicula(int idPelicula)
+        //public DataTable buscar(int idpelicula)
         //{
-        //    DataTable dt = new DataTable();
-        //    string consulta = "select * from Pelicula where idPelicula = " + idPelicula;
+        //    DataTable dtPeliculas = new DataTable();
 
-        //    dt = clsConexion.consultar(consulta);
-        //    return dt;
+        //    dtPeliculas = conect.ejecutar("select Nombre,Fecha_Estreno,Fecha_Salida from Pelicula where idPelicula = " + idpelicula);
+        //    return dtPeliculas;
         //}
+
+        public DataTable Cargarpelicula(int idPelicula)
+        {
+            CapaDatos.clsConexion conecta = new CapaDatos.clsConexion();
+            DataTable dtPelicula;
+            dtPelicula = conecta.ejecutar("select * from Pelicula where idPelicula = " + idPelicula);
+            return dtPelicula;
+        }
 
         public bool actualizarpelicula(int idPelicula, string Nombre, string Fecha_Estreno, string Fecha_Salida)
         {

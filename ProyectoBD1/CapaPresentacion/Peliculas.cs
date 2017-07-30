@@ -32,15 +32,24 @@ namespace CapaPresentacion
         {
             CapaNegocio.Peliculas pelicula = new CapaNegocio.Peliculas();
 
-            if (pelicula.insertarpelicula(Int32.Parse(txtidpelicula.Text), txtnombre.Text, txtfechaestreno.Text, txtfechafin.Text))
+
+            try
             {
+                pelicula.insertarpelicula(Int32.Parse(txtidpelicula.Text), txtnombre.Text, txtfechaestreno.Text, txtfechafin.Text);
+
                 MessageBox.Show("Película agregada correctamente");
                 Limpiar();
+
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Error Desconocido");
+
+                MessageBox.Show("Este ID ya existe");
+                Limpiar();
             }
+
+
+
         }
 
         private void Limpiar()
@@ -59,8 +68,12 @@ namespace CapaPresentacion
         private void btnconsultar_Click(object sender, EventArgs e)
         {
             CapaNegocio.Peliculas peliculas = new CapaNegocio.Peliculas();
-            dtgpeliculas.DataSource = peliculas.buscarPelicula(Int32.Parse(txtidpelicula.Text));
-            dtgpeliculas.DataBind();
+            DataTable dtPeliculas = new DataTable();
+
+            dtPeliculas = peliculas.buscar(Int32.Parse(txtidpelicula.Text));
+            dtgpeliculas.DataSource = dtPeliculas;
+
+
         }
 
         private void btnmodificar_Click(object sender, EventArgs e)
@@ -80,11 +93,12 @@ namespace CapaPresentacion
         private void btnborar_Click(object sender, EventArgs e)
         {
             CapaNegocio.Peliculas peliculas = new CapaNegocio.Peliculas();
-            if(peliculas.eliminarpelicula(Int32.Parse(txtidpelicula.Text), txtnombre.Text, txtfechaestreno.Text, txtfechafin.Text))
+            if (peliculas.eliminarpelicula(Int32.Parse(txtidpelicula.Text), txtnombre.Text, txtfechaestreno.Text, txtfechafin.Text))
             {
                 MessageBox.Show("Pelicula Eliminada");
                 Limpiar();
-            }else
+            }
+            else
             {
                 MessageBox.Show("Error Desconocido");
             }
