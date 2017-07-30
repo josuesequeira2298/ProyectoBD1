@@ -23,7 +23,7 @@ namespace CapaPresentacion
 
             try
             {
-                sala.insertarsala(Int32.Parse(txtidsala.Text), Int32.Parse(txtidtiposala.Text), txtdescripcion.Text, Int32.Parse(txtasientos.Text));
+                sala.insertarsala(Int32.Parse(txtidsala.Text), Int32.Parse(txtidtiposala.Text), Int32.Parse(txtasientos.Text));
 
 
                 MessageBox.Show("Sala Agregada correctamente");
@@ -37,10 +37,9 @@ namespace CapaPresentacion
 
         private void Limpiar()
         {
-            txtidsala.Text = " ";
-            txtidtiposala.Text = " ";
-            txtdescripcion.Text = " ";
-            txtasientos.Text = " ";
+            txtidsala.Text = "";
+            txtidtiposala.Text = "";
+            txtasientos.Text = "";
         }
 
         private void btnlimpiar_Click(object sender, EventArgs e)
@@ -51,7 +50,7 @@ namespace CapaPresentacion
         private void btnmodificar_Click(object sender, EventArgs e)
         {
             CapaNegocio.Sala sala = new CapaNegocio.Sala();
-            if (sala.insertarsala(Int32.Parse(txtidsala.Text), Int32.Parse(txtidtiposala.Text), txtdescripcion.Text, Int32.Parse(txtasientos.Text)))
+            if (sala.insertarsala(Int32.Parse(txtidsala.Text), Int32.Parse(txtidtiposala.Text), Int32.Parse(txtasientos.Text)))
             {
                 MessageBox.Show("Sala Modificada correctamente");
                 Limpiar();
@@ -68,7 +67,7 @@ namespace CapaPresentacion
             CapaNegocio.Sala sala = new CapaNegocio.Sala();
             try
             {
-                sala.eliminarsala(Int32.Parse(txtidsala.Text), Int32.Parse(txtidtiposala.Text), txtdescripcion.Text, Int32.Parse(txtasientos.Text));
+                sala.eliminarsala(Int32.Parse(txtidsala.Text), Int32.Parse(txtidtiposala.Text), Int32.Parse(txtasientos.Text));
 
 
                 MessageBox.Show("Sala Eliminada");
@@ -97,6 +96,11 @@ namespace CapaPresentacion
 
             dtSalas = salas.buscar(Int32.Parse(txtidsala.Text));
             dtgSalas.DataSource = dtSalas;
+        }
+
+        private void txtidsala_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

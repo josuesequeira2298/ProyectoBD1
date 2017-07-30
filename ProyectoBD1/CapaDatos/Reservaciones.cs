@@ -11,7 +11,7 @@ namespace CapaDatos
     {
         clsConexion conect = new clsConexion();
 
-        public bool reservar(int idReservacion, string Nombre_Cliente, int Cantidad_Asientos, string Fehca, string Estado, int cartelea, int Cartelera_Pelicula_idPelicula, int Cartelera_Sala_Tipo_Sala_idTipo_Sala)
+        public bool reservar(int idReservacion, string Nombre_Cliente, int Cantidad_Asientos, string Fehca, int cartelea, int Cartelera_Pelicula_idPelicula, int Cartelera_Sala_Tipo_Sala_idTipo_Sala)
         {
             bool creandoreservacion;
 
@@ -23,7 +23,7 @@ namespace CapaDatos
             }
             return false;
         }
-        public bool modifreservacion(int idReservacion, string Nombre_Cliente, int Cantidad_Asientos, string Fehca, string Estado, int cartelea, int Cartelera_Pelicula_idPelicula, int Cartelera_Sala_Tipo_Sala_idTipo_Sala)
+        public bool modifreservacion(int idReservacion, string Nombre_Cliente, int Cantidad_Asientos, string Fehca, int cartelea, int Cartelera_Pelicula_idPelicula, int Cartelera_Sala_Tipo_Sala_idTipo_Sala)
         {
             bool modifireser;
 
@@ -34,7 +34,7 @@ namespace CapaDatos
             }
             return false;
         }
-        public bool eliminarreservacion(int idReservacion, string Nombre_Cliente, int Cantidad_Asientos, string Fehca, string Estado, int cartelea, int Cartelera_Pelicula_idPelicula, int Cartelera_Sala_Tipo_Sala_idTipo_Sala)
+        public bool eliminarreservacion(int idReservacion, string Nombre_Cliente, int Cantidad_Asientos, string Fehca, int cartelea, int Cartelera_Pelicula_idPelicula, int Cartelera_Sala_Tipo_Sala_idTipo_Sala)
         {
             bool eliminarreservacion;
 
@@ -49,7 +49,7 @@ namespace CapaDatos
         {
             CapaDatos.clsConexion conecta = new CapaDatos.clsConexion();
             DataTable dtreservacion;
-            dtreservacion = conecta.ejecutar("select * from Pelicula where idPelicula = " + idreservacion);
+            dtreservacion = conecta.ejecutar("select * from Reservacion where idReservacion = " + idreservacion);
             return dtreservacion;
         }
 
@@ -57,7 +57,7 @@ namespace CapaDatos
         {
             CapaDatos.clsConexion conecta = new CapaDatos.clsConexion();
             DataTable dtreservaciones;
-            dtreservaciones = conecta.ejecutar("select * from Pelicula");
+            dtreservaciones = conecta.ejecutar("select * from Reservacion");
             return dtreservaciones;
         }
     }

@@ -29,12 +29,10 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtidsala = new System.Windows.Forms.TextBox();
             this.txtidtiposala = new System.Windows.Forms.TextBox();
-            this.txtdescripcion = new System.Windows.Forms.TextBox();
             this.txtasientos = new System.Windows.Forms.TextBox();
             this.btnconsultar = new System.Windows.Forms.Button();
             this.btnagregar = new System.Windows.Forms.Button();
@@ -56,16 +54,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ID Sala";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 111);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Descripción";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -79,7 +67,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 158);
+            this.label4.Location = new System.Drawing.Point(17, 111);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 17);
@@ -93,6 +81,7 @@
             this.txtidsala.Name = "txtidsala";
             this.txtidsala.Size = new System.Drawing.Size(132, 22);
             this.txtidsala.TabIndex = 4;
+            this.txtidsala.TextChanged += new System.EventHandler(this.txtidsala_TextChanged);
             // 
             // txtidtiposala
             // 
@@ -102,17 +91,9 @@
             this.txtidtiposala.Size = new System.Drawing.Size(132, 22);
             this.txtidtiposala.TabIndex = 5;
             // 
-            // txtdescripcion
-            // 
-            this.txtdescripcion.Location = new System.Drawing.Point(171, 102);
-            this.txtdescripcion.Margin = new System.Windows.Forms.Padding(4);
-            this.txtdescripcion.Name = "txtdescripcion";
-            this.txtdescripcion.Size = new System.Drawing.Size(132, 22);
-            this.txtdescripcion.TabIndex = 6;
-            // 
             // txtasientos
             // 
-            this.txtasientos.Location = new System.Drawing.Point(171, 149);
+            this.txtasientos.Location = new System.Drawing.Point(171, 106);
             this.txtasientos.Margin = new System.Windows.Forms.Padding(4);
             this.txtasientos.Name = "txtasientos";
             this.txtasientos.Size = new System.Drawing.Size(132, 22);
@@ -206,12 +187,10 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnconsultar);
             this.Controls.Add(this.txtasientos);
-            this.Controls.Add(this.txtdescripcion);
             this.Controls.Add(this.txtidtiposala);
             this.Controls.Add(this.txtidsala);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Salas";
@@ -225,12 +204,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtidsala;
         private System.Windows.Forms.TextBox txtidtiposala;
-        private System.Windows.Forms.TextBox txtdescripcion;
         private System.Windows.Forms.TextBox txtasientos;
         private System.Windows.Forms.Button btnconsultar;
         private System.Windows.Forms.Button btnagregar;

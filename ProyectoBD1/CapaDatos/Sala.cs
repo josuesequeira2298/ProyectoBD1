@@ -11,11 +11,11 @@ namespace CapaDatos
     {
         clsConexion conect = new clsConexion();
 
-        public bool insertarsala(int idsala, int idtiposala, string Descripcion, int asientos)
+        public bool insertarsala(int idsala, int idtiposala, int asientos)
         {
             bool creandosala;
 
-            creandosala = conect.ejecutarInsert("Insert Into");
+            creandosala = conect.ejecutarInsert("insert into Sala (idSalas,Cantidad_Asientos,FK_Sala_Tipo_Sala) values ("+idsala+","+asientos+","+idtiposala+")");
 
             if (creandosala)
             {
@@ -23,22 +23,22 @@ namespace CapaDatos
             }
             return false;
         }
-        public bool actualizarsala (int idsala, int idtiposala, string Descripcion, int asientos)
+        public bool actualizarsala (int idsala, int asientos, int idtiposala)
         {
             bool actualizandosala;
 
-            actualizandosala = conect.ejecutarInsert("update into");
+            actualizandosala = conect.ejecutarInsert("update Sala set Cantidad_Asientos = "+asientos+", FK_Sala_Tipo_Sala = "+idtiposala+" where idSalas="+idsala+"");
             if (actualizandosala)
             {
                 return true;
             }
             return false;
         }
-        public bool eliminarsala(int idsala, int idtiposala, string Descripcion, int asientos)
+        public bool eliminarsala(int idsala, int idtiposala, int asientos)
         {
             bool eliminarsala;
 
-            eliminarsala = conect.ejecutarInsert("Delete");
+            eliminarsala = conect.ejecutarInsert("DELETE Sala FROM Sala where idSalas =" +idsala);
             if (eliminarsala)
             {
                 return true;

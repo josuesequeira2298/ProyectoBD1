@@ -9,9 +9,9 @@ namespace CapaNegocio
 {
     public class Sala
     {
-        public bool insertarsala(int idsala, int idtiposala, string Descripcion, int asientos)
+        public bool insertarsala(int idsala, int idtiposala, int asientos)
         {
-            return new CapaDatos.Sala().insertarsala(idsala, idtiposala, Descripcion, asientos);
+            return new CapaDatos.Sala().insertarsala(idsala, idtiposala, asientos);
         }
         public DataTable buscar(int idsala)
         {
@@ -23,13 +23,13 @@ namespace CapaNegocio
             return new CapaDatos.Sala().CargarSalas();
         }
 
-        public bool actualizarsala(int idsala, int idtiposala, string Descripcion, int asientos)
+        public bool actualizarsala(int idsala, int idtiposala, int asientos)
         {
-            return new CapaDatos.Sala().actualizarsala(idsala, idtiposala, Descripcion, asientos);
+            return new CapaDatos.Sala().actualizarsala(idsala, idtiposala, asientos);
         }
-        public bool eliminarsala(int idsala, int idtiposala, string Descripcion, int asientos)
+        public bool eliminarsala(int idsala, int idtiposala, int asientos)
         {
-            return new CapaDatos.Sala().eliminarsala(idsala, idtiposala, Descripcion, asientos);
+            return new CapaDatos.Sala().eliminarsala(idsala, idtiposala, asientos);
         }
     }
 }
