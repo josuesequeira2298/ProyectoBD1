@@ -39,7 +39,7 @@ namespace CapaPresentacion
             }
             else
             {
-                MessageBox.Show("Error");
+                MessageBox.Show("Error Desconocido");
             }
         }
 

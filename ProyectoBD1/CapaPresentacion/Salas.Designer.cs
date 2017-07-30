@@ -40,6 +40,7 @@
             this.btnagregar = new System.Windows.Forms.Button();
             this.btnborrar = new System.Windows.Forms.Button();
             this.btnmodificar = new System.Windows.Forms.Button();
+            this.btnlimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -123,6 +124,7 @@
             this.btnagregar.TabIndex = 9;
             this.btnagregar.Text = "Agregar";
             this.btnagregar.UseVisualStyleBackColor = true;
+            this.btnagregar.Click += new System.EventHandler(this.btnagregar_Click);
             // 
             // btnborrar
             // 
@@ -141,12 +143,24 @@
             this.btnmodificar.TabIndex = 11;
             this.btnmodificar.Text = "Modificar";
             this.btnmodificar.UseVisualStyleBackColor = true;
+            this.btnmodificar.Click += new System.EventHandler(this.btnmodificar_Click);
+            // 
+            // btnlimpiar
+            // 
+            this.btnlimpiar.Location = new System.Drawing.Point(81, 230);
+            this.btnlimpiar.Name = "btnlimpiar";
+            this.btnlimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnlimpiar.TabIndex = 12;
+            this.btnlimpiar.Text = "Limpiar";
+            this.btnlimpiar.UseVisualStyleBackColor = true;
+            this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
             // 
             // Salas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(246, 240);
+            this.ClientSize = new System.Drawing.Size(246, 269);
+            this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.btnmodificar);
             this.Controls.Add(this.btnborrar);
             this.Controls.Add(this.btnagregar);
@@ -180,5 +194,6 @@
         private System.Windows.Forms.Button btnagregar;
         private System.Windows.Forms.Button btnborrar;
         private System.Windows.Forms.Button btnmodificar;
+        private System.Windows.Forms.Button btnlimpiar;
     }
 }

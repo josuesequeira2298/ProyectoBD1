@@ -16,5 +16,36 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
+
+        private void btnreservar_Click(object sender, EventArgs e)
+        {
+            CapaNegocio.Reservacion reservacion = new CapaNegocio.Reservacion();
+
+            if (reservacion.reservar(Int32.Parse(txtidreservacion.Text), txtnombrecliente.Text, Int32.Parse(txtcantasientos.Text), txtfechareser.Text, cbxactiva.Text, Int32.Parse(txtidcartelera.Text), Int32.Parse(txtidpelicula.Text), Int32.Parse(txtidtiposala.Text) ))
+            {
+                MessageBox.Show("Reservación Agregada");
+                Limpiar();
+            }else
+            {
+                MessageBox.Show("Error Desconocido");
+            }
+        }
+
+        private void Limpiar()
+        {
+            txtidreservacion.Text = " ";
+            txtidcartelera.Text = " ";
+            txtidpelicula.Text = " ";
+            txtidtiposala.Text = " ";
+            txtnombrecliente.Text = " ";
+            txtcantasientos.Text = " ";
+            txtfechareser.Text = " ";
+            cbxactiva.Text = "1";
+        }
+
+        private void btnlimpiar_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
     }
 }

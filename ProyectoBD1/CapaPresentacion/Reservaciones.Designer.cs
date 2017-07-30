@@ -44,12 +44,15 @@
             this.btnreservar = new System.Windows.Forms.Button();
             this.btnconsultar = new System.Windows.Forms.Button();
             this.btnactualizar = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtidreservacion = new System.Windows.Forms.TextBox();
+            this.btnlimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 145);
+            this.label1.Location = new System.Drawing.Point(20, 159);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 13);
             this.label1.TabIndex = 0;
@@ -58,7 +61,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 186);
+            this.label2.Location = new System.Drawing.Point(20, 190);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 13);
             this.label2.TabIndex = 1;
@@ -67,7 +70,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 227);
+            this.label3.Location = new System.Drawing.Point(20, 224);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(115, 13);
             this.label3.TabIndex = 2;
@@ -76,7 +79,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 21);
+            this.label5.Location = new System.Drawing.Point(20, 55);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(63, 13);
             this.label5.TabIndex = 4;
@@ -85,7 +88,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(20, 61);
+            this.label6.Location = new System.Drawing.Point(20, 94);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(58, 13);
             this.label6.TabIndex = 5;
@@ -94,7 +97,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(20, 103);
+            this.label7.Location = new System.Drawing.Point(20, 129);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(81, 13);
             this.label7.TabIndex = 6;
@@ -102,42 +105,42 @@
             // 
             // txtidcartelera
             // 
-            this.txtidcartelera.Location = new System.Drawing.Point(120, 18);
+            this.txtidcartelera.Location = new System.Drawing.Point(120, 55);
             this.txtidcartelera.Name = "txtidcartelera";
             this.txtidcartelera.Size = new System.Drawing.Size(100, 20);
             this.txtidcartelera.TabIndex = 7;
             // 
             // txtidpelicula
             // 
-            this.txtidpelicula.Location = new System.Drawing.Point(120, 58);
+            this.txtidpelicula.Location = new System.Drawing.Point(120, 91);
             this.txtidpelicula.Name = "txtidpelicula";
             this.txtidpelicula.Size = new System.Drawing.Size(100, 20);
             this.txtidpelicula.TabIndex = 8;
             // 
             // txtidtiposala
             // 
-            this.txtidtiposala.Location = new System.Drawing.Point(120, 100);
+            this.txtidtiposala.Location = new System.Drawing.Point(120, 122);
             this.txtidtiposala.Name = "txtidtiposala";
             this.txtidtiposala.Size = new System.Drawing.Size(100, 20);
             this.txtidtiposala.TabIndex = 9;
             // 
             // txtnombrecliente
             // 
-            this.txtnombrecliente.Location = new System.Drawing.Point(120, 142);
+            this.txtnombrecliente.Location = new System.Drawing.Point(120, 152);
             this.txtnombrecliente.Name = "txtnombrecliente";
             this.txtnombrecliente.Size = new System.Drawing.Size(100, 20);
             this.txtnombrecliente.TabIndex = 10;
             // 
             // txtcantasientos
             // 
-            this.txtcantasientos.Location = new System.Drawing.Point(142, 186);
+            this.txtcantasientos.Location = new System.Drawing.Point(142, 183);
             this.txtcantasientos.Name = "txtcantasientos";
             this.txtcantasientos.Size = new System.Drawing.Size(100, 20);
             this.txtcantasientos.TabIndex = 11;
             // 
             // txtfechareser
             // 
-            this.txtfechareser.Location = new System.Drawing.Point(142, 224);
+            this.txtfechareser.Location = new System.Drawing.Point(142, 217);
             this.txtfechareser.Name = "txtfechareser";
             this.txtfechareser.Size = new System.Drawing.Size(100, 20);
             this.txtfechareser.TabIndex = 12;
@@ -154,16 +157,17 @@
             // 
             // btnreservar
             // 
-            this.btnreservar.Location = new System.Drawing.Point(52, 261);
+            this.btnreservar.Location = new System.Drawing.Point(60, 263);
             this.btnreservar.Name = "btnreservar";
             this.btnreservar.Size = new System.Drawing.Size(75, 23);
             this.btnreservar.TabIndex = 14;
             this.btnreservar.Text = "Reservar";
             this.btnreservar.UseVisualStyleBackColor = true;
+            this.btnreservar.Click += new System.EventHandler(this.btnreservar_Click);
             // 
             // btnconsultar
             // 
-            this.btnconsultar.Location = new System.Drawing.Point(192, 261);
+            this.btnconsultar.Location = new System.Drawing.Point(183, 263);
             this.btnconsultar.Name = "btnconsultar";
             this.btnconsultar.Size = new System.Drawing.Size(75, 23);
             this.btnconsultar.TabIndex = 15;
@@ -172,18 +176,47 @@
             // 
             // btnactualizar
             // 
-            this.btnactualizar.Location = new System.Drawing.Point(120, 310);
+            this.btnactualizar.Location = new System.Drawing.Point(60, 312);
             this.btnactualizar.Name = "btnactualizar";
             this.btnactualizar.Size = new System.Drawing.Size(75, 23);
             this.btnactualizar.TabIndex = 16;
             this.btnactualizar.Text = "Actualizar";
             this.btnactualizar.UseVisualStyleBackColor = true;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(20, 18);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(81, 13);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "ID Reservación";
+            // 
+            // txtidreservacion
+            // 
+            this.txtidreservacion.Location = new System.Drawing.Point(120, 18);
+            this.txtidreservacion.Name = "txtidreservacion";
+            this.txtidreservacion.Size = new System.Drawing.Size(100, 20);
+            this.txtidreservacion.TabIndex = 18;
+            // 
+            // btnlimpiar
+            // 
+            this.btnlimpiar.Location = new System.Drawing.Point(183, 312);
+            this.btnlimpiar.Name = "btnlimpiar";
+            this.btnlimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnlimpiar.TabIndex = 19;
+            this.btnlimpiar.Text = "Limpiar";
+            this.btnlimpiar.UseVisualStyleBackColor = true;
+            this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
+            // 
             // Reservaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(336, 355);
+            this.Controls.Add(this.btnlimpiar);
+            this.Controls.Add(this.txtidreservacion);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnactualizar);
             this.Controls.Add(this.btnconsultar);
             this.Controls.Add(this.btnreservar);
@@ -225,5 +258,8 @@
         private System.Windows.Forms.Button btnreservar;
         private System.Windows.Forms.Button btnconsultar;
         private System.Windows.Forms.Button btnactualizar;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtidreservacion;
+        private System.Windows.Forms.Button btnlimpiar;
     }
 }

@@ -44,6 +44,8 @@
     <Compile Include="clsConexion.cs" />
     <Compile Include="Peliculas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reservaciones.cs" />
+    <Compile Include="Sala.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
