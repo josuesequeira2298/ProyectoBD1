@@ -45,5 +45,20 @@ namespace CapaDatos
             }
             return false;
         }
+        public DataTable CargarSala(int idsala)
+        {
+            CapaDatos.clsConexion conecta = new CapaDatos.clsConexion();
+            DataTable dtSala;
+            dtSala = conecta.ejecutar("select * from Sala ="  + idsala);
+            return dtSala;
+        }
+
+        public DataTable CargarSalas()
+        {
+            CapaDatos.clsConexion conecta = new CapaDatos.clsConexion();
+            DataTable dtSalas;
+            dtSalas = conecta.ejecutar("select * from Sala");
+            return dtSalas;
+        }
     }
 }
