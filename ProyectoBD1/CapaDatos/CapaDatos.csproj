@@ -42,7 +42,6 @@
   <ItemGroup>
     <Compile Include="Cartelera.cs" />
     <Compile Include="Class1.cs" />
-    <Compile Include="Class2.cs" />
     <Compile Include="clsConexion.cs" />
     <Compile Include="Peliculas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

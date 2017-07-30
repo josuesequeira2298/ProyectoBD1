@@ -34,12 +34,12 @@ namespace CapaDatos
             }
             return false;
         }
-        public bool eliminarsala(int idsala, int idtiposala, int asientos)
+        
+        public bool EliminarSala(int idSala)
         {
-            bool eliminarsala;
-
-            eliminarsala = conect.ejecutarInsert("DELETE Sala FROM Sala where idSalas =" +idsala+"");
-            if (eliminarsala)
+            bool EliminarSala;
+            EliminarSala = conect.ejecutarInsert("DELETE Sala FROM Sala where idSalas = " + idSala + "");
+            if (EliminarSala)
             {
                 return true;
             }

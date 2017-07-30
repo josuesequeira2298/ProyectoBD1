@@ -104,29 +104,6 @@ namespace CapaDatos
             cerrarConexion();
             return dt;
         }
-        public static SqlCommand CrearComando()
-        {
-            string _cadenaConexion = Class2.CadenaConexion;
-            SqlConnection _conexion = new SqlConnection();
-            _conexion.ConnectionString = _cadenaConexion;
-            SqlCommand _comando = new SqlCommand();
-            _comando = _conexion.CreateCommand();
-            _comando.CommandType = CommandType.Text;
-            return _comando;
-        }
-        public static int EjecutarComandoInsert(SqlCommand comando)
-        {
-            try
-            {
-                comando.Connection.Open();
-                return comando.ExecuteNonQuery();
-            }
-            catch { throw; }
-            finally
-            {
-                comando.Connection.Dispose();
-                comando.Connection.Close();
-            }
-        }
+        
     }
 }

@@ -64,22 +64,6 @@ namespace CapaPresentacion
 
         }
 
-        private void btnborrar_Click(object sender, EventArgs e)
-        {
-            CapaNegocio.Sala sala = new CapaNegocio.Sala();
-            try
-            {
-                sala.eliminarsala(Int32.Parse(txtidsala.Text), Int32.Parse(txtidtiposala.Text), Int32.Parse(txtasientos.Text));
-
-
-                MessageBox.Show("Sala Eliminada");
-                Limpiar();
-            }
-            catch
-            {
-                MessageBox.Show("Error Desconocido");
-            }
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -103,6 +87,27 @@ namespace CapaPresentacion
         private void txtidsala_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminar_Click_1(object sender, EventArgs e)
+        {
+            CapaNegocio.Sala sala = new CapaNegocio.Sala();
+            try
+            {
+                sala.EliminarSala(Int32.Parse(txtidsala.Text));
+                
+                MessageBox.Show("Sala Eliminada");
+                Limpiar();
+            }
+            catch
+            {
+                MessageBox.Show("Error Desconocido");
+            }
         }
     }
 }

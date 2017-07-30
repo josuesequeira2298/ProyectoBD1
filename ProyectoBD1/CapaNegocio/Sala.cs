@@ -27,9 +27,10 @@ namespace CapaNegocio
         {
             return new CapaDatos.Sala().actualizarsala(idsala, idtiposala, asientos);
         }
-        public bool eliminarsala(int idsala, int idtiposala, int asientos)
+        
+        public bool EliminarSala(int idSala)
         {
-            return new CapaDatos.Sala().eliminarsala(idsala, idtiposala, asientos);
+            return new CapaDatos.Sala().EliminarSala(idSala);
         }
     }
 }

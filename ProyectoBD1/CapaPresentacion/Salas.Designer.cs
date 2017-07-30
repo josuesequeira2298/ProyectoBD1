@@ -36,11 +36,11 @@
             this.txtasientos = new System.Windows.Forms.TextBox();
             this.btnconsultar = new System.Windows.Forms.Button();
             this.btnagregar = new System.Windows.Forms.Button();
-            this.btnborrar = new System.Windows.Forms.Button();
             this.btnmodificar = new System.Windows.Forms.Button();
             this.btnlimpiar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dtgSalas = new System.Windows.Forms.DataGridView();
+            this.btnEliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgSalas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,17 +121,6 @@
             this.btnagregar.UseVisualStyleBackColor = true;
             this.btnagregar.Click += new System.EventHandler(this.btnagregar_Click);
             // 
-            // btnborrar
-            // 
-            this.btnborrar.Location = new System.Drawing.Point(33, 247);
-            this.btnborrar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnborrar.Name = "btnborrar";
-            this.btnborrar.Size = new System.Drawing.Size(100, 28);
-            this.btnborrar.TabIndex = 10;
-            this.btnborrar.Text = "Eliminar";
-            this.btnborrar.UseVisualStyleBackColor = true;
-            this.btnborrar.Click += new System.EventHandler(this.btnborrar_Click);
-            // 
             // btnmodificar
             // 
             this.btnmodificar.Location = new System.Drawing.Point(183, 247);
@@ -145,7 +134,7 @@
             // 
             // btnlimpiar
             // 
-            this.btnlimpiar.Location = new System.Drawing.Point(33, 283);
+            this.btnlimpiar.Location = new System.Drawing.Point(33, 292);
             this.btnlimpiar.Margin = new System.Windows.Forms.Padding(4);
             this.btnlimpiar.Name = "btnlimpiar";
             this.btnlimpiar.Size = new System.Drawing.Size(100, 28);
@@ -156,7 +145,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(183, 283);
+            this.button1.Location = new System.Drawing.Point(183, 293);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 47);
@@ -174,15 +163,25 @@
             this.dtgSalas.Size = new System.Drawing.Size(460, 333);
             this.dtgSalas.TabIndex = 13;
             // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(33, 246);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(98, 29);
+            this.btnEliminar.TabIndex = 14;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click_1);
+            // 
             // Salas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(777, 374);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.dtgSalas);
             this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.btnmodificar);
-            this.Controls.Add(this.btnborrar);
             this.Controls.Add(this.btnagregar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnconsultar);
@@ -211,10 +210,10 @@
         private System.Windows.Forms.TextBox txtasientos;
         private System.Windows.Forms.Button btnconsultar;
         private System.Windows.Forms.Button btnagregar;
-        private System.Windows.Forms.Button btnborrar;
         private System.Windows.Forms.Button btnmodificar;
         private System.Windows.Forms.Button btnlimpiar;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dtgSalas;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }
