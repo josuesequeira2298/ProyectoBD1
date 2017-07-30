@@ -21,5 +21,10 @@ namespace CapaNegocio
             CapaDatos.Peliculas peliculas = new CapaDatos.Peliculas();
             return peliculas.buscar(idpelicula);
         }
+
+        public bool actualizarpelicula(int idPelicula, string Nombre, string Fecha_Estreno, string Fecha_Salida)
+        {
+            return new CapaDatos.Peliculas().actualizarpelicula(idPelicula, Nombre, Fecha_Estreno, Fecha_Salida);
+        }
     }
 }

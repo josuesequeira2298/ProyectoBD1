@@ -30,5 +30,17 @@ namespace CapaDatos
             dtpeliculas = conect.ejecutar(" select idPelicula, Nombre,Fecha_Estreno,Fecha_Salida from Pelicula where idPelicula = (" + idpelicula + ") ");
             return dtpeliculas;
         }
+
+        public bool actualizarpelicula(int idPelicula, string Nombre, string Fecha_Estreno, string Fecha_Salida)
+        {
+            bool actualizandopeli;
+
+            actualizandopeli = conect.ejecutarInsert("update");
+            if (actualizandopeli)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

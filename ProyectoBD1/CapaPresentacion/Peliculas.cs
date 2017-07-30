@@ -62,5 +62,19 @@ namespace CapaPresentacion
             peliculas.buscar(Int32.Parse(txtidpelicula.Text));
 
         }
+
+        private void btnmodificar_Click(object sender, EventArgs e)
+        {
+            CapaNegocio.Peliculas peliculas = new CapaNegocio.Peliculas();
+            if (peliculas.actualizarpelicula(Int32.Parse(txtidpelicula.Text), txtnombre.Text, txtfechaestreno.Text, txtfechafin.Text))
+            {
+                MessageBox.Show("Película modificada correctamente");
+                Limpiar();
+            }
+            else
+            {
+                MessageBox.Show("Error Desconocido");
+            }
+        }
     }
 }
