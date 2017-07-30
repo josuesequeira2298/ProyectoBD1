@@ -78,5 +78,23 @@ namespace CapaPresentacion
                 MessageBox.Show("Error Desconocido");
             }
         }
+
+        private void btnconsultar_Click(object sender, EventArgs e)
+        {
+            CapaNegocio.Reservacion reservacion = new CapaNegocio.Reservacion();
+            DataTable dtreservacion = new DataTable();
+
+            dtreservacion = reservacion.buscarreservacion(Int32.Parse(txtidreservacion.Text));
+            dtgreservaciones.DataSource = dtreservacion;
+        }
+
+        private void btnconsultodo_Click(object sender, EventArgs e)
+        {
+            CapaNegocio.Reservacion reservacion = new CapaNegocio.Reservacion();
+            DataTable dtreservaciones = new DataTable();
+
+            dtreservaciones = reservacion.Buscarreservaciones();
+            dtgreservaciones.DataSource = dtreservaciones;
+        }
     }
 }

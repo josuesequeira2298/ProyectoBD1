@@ -22,5 +22,15 @@ namespace CapaNegocio
         {
             return new CapaDatos.Reservaciones().eliminarreservacion(idReservacion, Nombre_Cliente, Cantidad_Asientos, Fehca, Estado, cartelea, Cartelera_Pelicula_idPelicula, Cartelera_Sala_Tipo_Sala_idTipo_Sala);
         }
+        public DataTable buscarreservacion(int idreservacion)
+        {
+            return new CapaDatos.Reservaciones().Cargarreservacion(idreservacion);
+        }
+
+        public DataTable Buscarreservaciones()
+        {
+            return new CapaDatos.Reservaciones().Cargarreservaciones();
+        }
     }
+    
 }

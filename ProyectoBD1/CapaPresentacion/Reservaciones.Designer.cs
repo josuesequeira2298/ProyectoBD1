@@ -49,6 +49,7 @@
             this.btnlimpiar = new System.Windows.Forms.Button();
             this.btneliminar = new System.Windows.Forms.Button();
             this.dtgreservaciones = new System.Windows.Forms.DataGridView();
+            this.btnconsultodo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgreservaciones)).BeginInit();
             this.SuspendLayout();
             // 
@@ -176,6 +177,7 @@
             this.btnconsultar.TabIndex = 15;
             this.btnconsultar.Text = "Consultar";
             this.btnconsultar.UseVisualStyleBackColor = true;
+            this.btnconsultar.Click += new System.EventHandler(this.btnconsultar_Click);
             // 
             // btnactualizar
             // 
@@ -215,7 +217,7 @@
             // 
             // btneliminar
             // 
-            this.btneliminar.Location = new System.Drawing.Point(132, 286);
+            this.btneliminar.Location = new System.Drawing.Point(131, 263);
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(75, 23);
             this.btneliminar.TabIndex = 20;
@@ -231,11 +233,22 @@
             this.dtgreservaciones.Size = new System.Drawing.Size(353, 313);
             this.dtgreservaciones.TabIndex = 21;
             // 
+            // btnconsultodo
+            // 
+            this.btnconsultodo.Location = new System.Drawing.Point(118, 312);
+            this.btnconsultodo.Name = "btnconsultodo";
+            this.btnconsultodo.Size = new System.Drawing.Size(102, 23);
+            this.btnconsultodo.TabIndex = 22;
+            this.btnconsultodo.Text = "Consultar Todo";
+            this.btnconsultodo.UseVisualStyleBackColor = true;
+            this.btnconsultodo.Click += new System.EventHandler(this.btnconsultodo_Click);
+            // 
             // Reservaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(726, 355);
+            this.Controls.Add(this.btnconsultodo);
             this.Controls.Add(this.dtgreservaciones);
             this.Controls.Add(this.btneliminar);
             this.Controls.Add(this.btnlimpiar);
@@ -288,5 +301,6 @@
         private System.Windows.Forms.Button btnlimpiar;
         private System.Windows.Forms.Button btneliminar;
         private System.Windows.Forms.DataGridView dtgreservaciones;
+        private System.Windows.Forms.Button btnconsultodo;
     }
 }

@@ -45,5 +45,20 @@ namespace CapaDatos
             }
             return false;
         }
+        public DataTable Cargarreservacion(int idreservacion)
+        {
+            CapaDatos.clsConexion conecta = new CapaDatos.clsConexion();
+            DataTable dtreservacion;
+            dtreservacion = conecta.ejecutar("select * from Pelicula where idPelicula = " + idreservacion);
+            return dtreservacion;
+        }
+
+        public DataTable Cargarreservaciones()
+        {
+            CapaDatos.clsConexion conecta = new CapaDatos.clsConexion();
+            DataTable dtreservaciones;
+            dtreservaciones = conecta.ejecutar("select * from Pelicula");
+            return dtreservaciones;
+        }
     }
 }
