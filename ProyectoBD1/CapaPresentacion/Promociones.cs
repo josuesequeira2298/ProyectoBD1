@@ -84,6 +84,7 @@ namespace CapaPresentacion
             txtrestriciones.Text = " ";
             txtfechaini.Text = " ";
             txtfechafin.Text = " ";
+            txtdescripcion.Text = " ";
         }
 
         private void btnconsultartodo_Click(object sender, EventArgs e)
