@@ -16,7 +16,7 @@ namespace CapaDatos
         {
             bool creandoPromociones;
 
-            creandoPromociones = conect.ejecutarInsert("insert into Promociones(idPromocion,Nombre,FK_idPelicula,Restricciones,FechaInicio,FechaFin,Descripcion) values ("+idPromocion+",'"+Nombre+"',"+idPelicula+",'"+Restricciones+"','"+Fechaini+"','"+Fechafin+","+Descripcion+"')");
+            creandoPromociones = conect.ejecutarInsert("insert into Promociones(idPromocion,Nombre,FK_idPelicula,Restricciones,FechaInicio,FechaFin,Descripcion) values ("+idPromocion+",'"+Nombre+"',"+idPelicula+",'"+Restricciones+"','"+Fechaini+"','"+Fechafin+"','"+Descripcion+"')");
 
             if (creandoPromociones)
             {
@@ -46,7 +46,7 @@ namespace CapaDatos
         {
             bool actualizandoPromociones;
 
-            actualizandoPromociones = conect.ejecutarInsert("update Promociones set idPromocion ="+idPromocion+" , Nombre = '"+Nombre+"', IdPelicula ="+idPelicula+ ",Restricciones='"+Restricciones+"' , FechaInicio = '"+Fechaini+"', FechaFin = '"+Fechafin+"', Descripcion = "+Descripcion+" where idPromocion ="+idPromocion+" ");
+            actualizandoPromociones = conect.ejecutarInsert("update Promociones set idPromocion ="+idPromocion+" , Nombre = '"+Nombre+"', FK_idPelicula ="+idPelicula+ ",Restricciones='"+Restricciones+"' , FechaInicio = '"+Fechaini+"', FechaFin = '"+Fechafin+"', Descripcion = '"+Descripcion+"' where idPromocion ="+idPromocion+" ");
             if (actualizandoPromociones)
             {
                 return true;

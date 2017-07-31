@@ -25,7 +25,7 @@ namespace CapaPresentacion
             {
                 Cartelera.insertarPromociones(Int32.Parse(txtidpromo.Text), txtnombre.Text, Int32.Parse(txtidpelicula.Text), txtrestriciones.Text, txtfechaini.Text, txtfechafin.Text, txtdescripcion.Text);
 
-                MessageBox.Show("Cartelera agregada correctamente");
+                MessageBox.Show("Promoción agregada correctamente");
                 Limpiar();
 
             }

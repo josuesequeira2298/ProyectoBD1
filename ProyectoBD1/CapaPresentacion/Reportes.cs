@@ -22,8 +22,8 @@ namespace CapaPresentacion
             CapaNegocio.Reportes Reportes = new CapaNegocio.Reportes();
             DataTable dtReportes = new DataTable();
 
-            dtReportes = Reportes.CargarVentasPeliculas();
-            txtventastotales.Text = "1";
+            dtReportes = Reportes.CargarVentasPeliculas(Int32.Parse(txtidpelicula.Text));
+            dtgReportes.DataSource = dtReportes;
         }
 
         private void btnventfuncion_Click(object sender, EventArgs e)
@@ -31,8 +31,8 @@ namespace CapaPresentacion
             CapaNegocio.Reportes Reportes = new CapaNegocio.Reportes();
             DataTable dtReportes = new DataTable();
 
-            dtReportes = Reportes.CargarVentasFuncion();
-            txtventastotales.Text = "2";
+            dtReportes = Reportes.CargarVentasFuncion(Int32.Parse(txtidcartelera.Text));
+            dtgReportes.DataSource = dtReportes;
         }
 
         private void btnventaslapso_Click(object sender, EventArgs e)
@@ -40,8 +40,8 @@ namespace CapaPresentacion
             CapaNegocio.Reportes Reportes = new CapaNegocio.Reportes();
             DataTable dtReportes = new DataTable();
 
-            dtReportes = Reportes.CargarVentasLapso();
-            txtventastotales.Text = "3";
+            dtReportes = Reportes.CargarVentasLapso(txtfechaini.Text,txtfechafin.Text);
+            dtgReportes.DataSource = dtReportes;
         }
 
         private void btnventastotales_Click(object sender, EventArgs e)
@@ -50,9 +50,21 @@ namespace CapaPresentacion
             DataTable dtReportes = new DataTable();
 
             dtReportes = Reportes.CargarVentasTotales();
-            txtventastotales.Text = "4";
+            dtgReportes.DataSource = dtReportes;
 
-           
+
+        }
+
+        private void btnextra_Click(object sender, EventArgs e)
+        {
+
+            CapaNegocio.Reportes Reportes = new CapaNegocio.Reportes();
+            DataTable dtReportes = new DataTable();
+
+            dtReportes = Reportes.CargarVentasPorEntrada(Int32.Parse(txtTipoEntrada.Text));
+            dtgReportes.DataSource = dtReportes;
+
+
         }
     }
 }
