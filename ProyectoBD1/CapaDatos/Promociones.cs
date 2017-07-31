@@ -12,11 +12,11 @@ namespace CapaDatos
         clsConexion conect = new clsConexion();
         clsConexion consultar = new clsConexion();
 
-        public bool insertarPromociones(int idPromocion, string Nombre, int idPelicula, string Restricciones, string Fechaini, string Fechafin)
+        public bool insertarPromociones(int idPromocion, string Nombre, int idPelicula, string Restricciones, string Fechaini, string Fechafin, string Descripcion)
         {
             bool creandoPromociones;
 
-            creandoPromociones = conect.ejecutarInsert("insert into Promociones(idPromocion,Nombre,FK_idPelicula,Restricciones,FechaInicio,FechaFin) values ("+idPromocion+",'"+Nombre+"',"+idPelicula+",'"+Restricciones+"','"+Fechaini+"','"+Fechafin+"')");
+            creandoPromociones = conect.ejecutarInsert("insert into Promociones(idPromocion,Nombre,FK_idPelicula,Restricciones,FechaInicio,FechaFin,Descripcion) values ("+idPromocion+",'"+Nombre+"',"+idPelicula+",'"+Restricciones+"','"+Fechaini+"','"+Fechafin+","+Descripcion+"')");
 
             if (creandoPromociones)
             {
@@ -42,11 +42,11 @@ namespace CapaDatos
             return dtPromociones;
         }
 
-        public bool actualizarPromociones(int idPromocion, string Nombre, int idPelicula, string Restricciones, string Fechaini, string Fechafin)
+        public bool actualizarPromociones(int idPromocion, string Nombre, int idPelicula, string Restricciones, string Fechaini, string Fechafin, string Descripcion)
         {
             bool actualizandoPromociones;
 
-            actualizandoPromociones = conect.ejecutarInsert("update Promociones set idPromocion ="+idPromocion+" , Nombre = '"+Nombre+"', IdPelicula ="+idPelicula+ ",Restricciones='"+Restricciones+"' , FechaInicio = '"+Fechaini+"', FechaFin = '"+Fechafin+"' where idPromocion ="+idPromocion+" ");
+            actualizandoPromociones = conect.ejecutarInsert("update Promociones set idPromocion ="+idPromocion+" , Nombre = '"+Nombre+"', IdPelicula ="+idPelicula+ ",Restricciones='"+Restricciones+"' , FechaInicio = '"+Fechaini+"', FechaFin = '"+Fechafin+"', Descripcion = "+Descripcion+" where idPromocion ="+idPromocion+" ");
             if (actualizandoPromociones)
             {
                 return true;
