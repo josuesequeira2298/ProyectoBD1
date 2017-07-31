@@ -15,7 +15,7 @@ namespace CapaDatos
         {
             bool creandoreservacion;
 
-            creandoreservacion = conect.ejecutarInsert("Insert Into");
+            creandoreservacion = conect.ejecutarInsert("insert into Reservacion(idReservacion, Nombre_Cliente, Cantidad_Asientos, Fecha, FK_idCartelera, FK_idPelicula, FK_idSala) values("+idReservacion+", '"+Nombre_Cliente+"',"+Cantidad_Asientos+", '"+Fehca+"', "+cartelea +", "+ Cartelera_Pelicula_idPelicula + ", "+Cartelera_Sala_Tipo_Sala_idTipo_Sala+")");
 
             if (creandoreservacion)
             {
