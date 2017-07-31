@@ -38,7 +38,7 @@ namespace CapaDatos
         {
             bool eliminarreservacion;
 
-            eliminarreservacion = conect.ejecutarInsert("delete");
+            eliminarreservacion = conect.ejecutarInsert("DELETE Reservacion FROM Reservacion where idReservacion = " + idReservacion + "");
             if (eliminarreservacion)
             {
                 return true;
