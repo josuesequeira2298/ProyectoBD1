@@ -53,72 +53,81 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 20);
+            this.label1.Location = new System.Drawing.Point(16, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 13);
+            this.label1.Size = new System.Drawing.Size(92, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID Promoción";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 50);
+            this.label2.Location = new System.Drawing.Point(16, 62);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(58, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 82);
+            this.label3.Location = new System.Drawing.Point(16, 101);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 13);
+            this.label3.Size = new System.Drawing.Size(74, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "ID Pelicula";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 116);
+            this.label4.Location = new System.Drawing.Point(16, 143);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 13);
+            this.label4.Size = new System.Drawing.Size(93, 17);
             this.label4.TabIndex = 3;
             this.label4.Text = "Restricciones";
             // 
             // txtidpromo
             // 
-            this.txtidpromo.Location = new System.Drawing.Point(112, 17);
+            this.txtidpromo.Location = new System.Drawing.Point(149, 21);
+            this.txtidpromo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtidpromo.Name = "txtidpromo";
-            this.txtidpromo.Size = new System.Drawing.Size(100, 20);
+            this.txtidpromo.Size = new System.Drawing.Size(132, 22);
             this.txtidpromo.TabIndex = 4;
             // 
             // txtnombre
             // 
-            this.txtnombre.Location = new System.Drawing.Point(112, 47);
+            this.txtnombre.Location = new System.Drawing.Point(149, 58);
+            this.txtnombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(100, 20);
+            this.txtnombre.Size = new System.Drawing.Size(132, 22);
             this.txtnombre.TabIndex = 5;
             // 
             // txtidpelicula
             // 
-            this.txtidpelicula.Location = new System.Drawing.Point(112, 79);
+            this.txtidpelicula.Location = new System.Drawing.Point(149, 97);
+            this.txtidpelicula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtidpelicula.Name = "txtidpelicula";
-            this.txtidpelicula.Size = new System.Drawing.Size(100, 20);
+            this.txtidpelicula.Size = new System.Drawing.Size(132, 22);
             this.txtidpelicula.TabIndex = 6;
             // 
             // txtrestriciones
             // 
-            this.txtrestriciones.Location = new System.Drawing.Point(112, 113);
+            this.txtrestriciones.Location = new System.Drawing.Point(149, 139);
+            this.txtrestriciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtrestriciones.Name = "txtrestriciones";
-            this.txtrestriciones.Size = new System.Drawing.Size(100, 20);
+            this.txtrestriciones.Size = new System.Drawing.Size(132, 22);
             this.txtrestriciones.TabIndex = 7;
             // 
             // btnagregar
             // 
-            this.btnagregar.Location = new System.Drawing.Point(241, 15);
+            this.btnagregar.Location = new System.Drawing.Point(321, 18);
+            this.btnagregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnagregar.Name = "btnagregar";
-            this.btnagregar.Size = new System.Drawing.Size(75, 23);
+            this.btnagregar.Size = new System.Drawing.Size(100, 28);
             this.btnagregar.TabIndex = 8;
             this.btnagregar.Text = "Agregar";
             this.btnagregar.UseVisualStyleBackColor = true;
@@ -126,9 +135,10 @@
             // 
             // btnconsultar
             // 
-            this.btnconsultar.Location = new System.Drawing.Point(352, 15);
+            this.btnconsultar.Location = new System.Drawing.Point(469, 18);
+            this.btnconsultar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnconsultar.Name = "btnconsultar";
-            this.btnconsultar.Size = new System.Drawing.Size(75, 23);
+            this.btnconsultar.Size = new System.Drawing.Size(100, 28);
             this.btnconsultar.TabIndex = 9;
             this.btnconsultar.Text = "Consultar";
             this.btnconsultar.UseVisualStyleBackColor = true;
@@ -136,49 +146,55 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 150);
+            this.label5.Location = new System.Drawing.Point(16, 185);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 13);
+            this.label5.Size = new System.Drawing.Size(83, 17);
             this.label5.TabIndex = 10;
             this.label5.Text = "Fecha Inicio";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 184);
+            this.label6.Location = new System.Drawing.Point(16, 226);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 13);
+            this.label6.Size = new System.Drawing.Size(70, 17);
             this.label6.TabIndex = 11;
             this.label6.Text = "Fecha Fin";
             // 
             // txtfechaini
             // 
-            this.txtfechaini.Location = new System.Drawing.Point(112, 147);
+            this.txtfechaini.Location = new System.Drawing.Point(149, 181);
+            this.txtfechaini.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtfechaini.Name = "txtfechaini";
-            this.txtfechaini.Size = new System.Drawing.Size(100, 20);
+            this.txtfechaini.Size = new System.Drawing.Size(132, 22);
             this.txtfechaini.TabIndex = 12;
             // 
             // txtfechafin
             // 
-            this.txtfechafin.Location = new System.Drawing.Point(112, 181);
+            this.txtfechafin.Location = new System.Drawing.Point(149, 223);
+            this.txtfechafin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtfechafin.Name = "txtfechafin";
-            this.txtfechafin.Size = new System.Drawing.Size(100, 20);
+            this.txtfechafin.Size = new System.Drawing.Size(132, 22);
             this.txtfechafin.TabIndex = 13;
             // 
             // btnborar
             // 
-            this.btnborar.Location = new System.Drawing.Point(241, 77);
+            this.btnborar.Location = new System.Drawing.Point(321, 95);
+            this.btnborar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnborar.Name = "btnborar";
-            this.btnborar.Size = new System.Drawing.Size(75, 23);
+            this.btnborar.Size = new System.Drawing.Size(100, 28);
             this.btnborar.TabIndex = 14;
-            this.btnborar.Text = "Borar";
+            this.btnborar.Text = "Eliminar";
             this.btnborar.UseVisualStyleBackColor = true;
             // 
             // btnactualizar
             // 
-            this.btnactualizar.Location = new System.Drawing.Point(352, 77);
+            this.btnactualizar.Location = new System.Drawing.Point(469, 95);
+            this.btnactualizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnactualizar.Name = "btnactualizar";
-            this.btnactualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnactualizar.Size = new System.Drawing.Size(100, 28);
             this.btnactualizar.TabIndex = 15;
             this.btnactualizar.Text = "Actualizar";
             this.btnactualizar.UseVisualStyleBackColor = true;
@@ -186,34 +202,37 @@
             // dtgpromociones
             // 
             this.dtgpromociones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgpromociones.Location = new System.Drawing.Point(12, 228);
+            this.dtgpromociones.Location = new System.Drawing.Point(16, 281);
+            this.dtgpromociones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtgpromociones.Name = "dtgpromociones";
-            this.dtgpromociones.Size = new System.Drawing.Size(415, 150);
+            this.dtgpromociones.Size = new System.Drawing.Size(553, 185);
             this.dtgpromociones.TabIndex = 16;
             // 
             // btnlimpiar
             // 
-            this.btnlimpiar.Location = new System.Drawing.Point(241, 140);
+            this.btnlimpiar.Location = new System.Drawing.Point(321, 172);
+            this.btnlimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnlimpiar.Name = "btnlimpiar";
-            this.btnlimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnlimpiar.Size = new System.Drawing.Size(100, 28);
             this.btnlimpiar.TabIndex = 17;
             this.btnlimpiar.Text = "Limpiar";
             this.btnlimpiar.UseVisualStyleBackColor = true;
             // 
             // btnconsultartodo
             // 
-            this.btnconsultartodo.Location = new System.Drawing.Point(340, 140);
+            this.btnconsultartodo.Location = new System.Drawing.Point(453, 172);
+            this.btnconsultartodo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnconsultartodo.Name = "btnconsultartodo";
-            this.btnconsultartodo.Size = new System.Drawing.Size(87, 23);
+            this.btnconsultartodo.Size = new System.Drawing.Size(116, 28);
             this.btnconsultartodo.TabIndex = 18;
             this.btnconsultartodo.Text = "Consultar Todo";
             this.btnconsultartodo.UseVisualStyleBackColor = true;
             // 
             // Promociones
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(439, 390);
+            this.ClientSize = new System.Drawing.Size(585, 480);
             this.Controls.Add(this.btnconsultartodo);
             this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.dtgpromociones);
@@ -233,6 +252,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Promociones";
             this.Text = "Promociones";
             ((System.ComponentModel.ISupportInitialize)(this.dtgpromociones)).EndInit();

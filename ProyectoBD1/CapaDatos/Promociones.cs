@@ -16,7 +16,7 @@ namespace CapaDatos
         {
             bool creandoPromociones;
 
-            creandoPromociones = conect.ejecutarInsert("insert into");
+            creandoPromociones = conect.ejecutarInsert("insert into Promociones(idPromocion,Nombre,IdPelicula,Restricciones,FechaInicio,FechaFin) values ("+idPromocion+",'"+Nombre+"',"+idPelicula+",'"+Restricciones+"','"+Fechaini+"','"+Fechafin+"')");
 
             if (creandoPromociones)
             {
@@ -46,7 +46,7 @@ namespace CapaDatos
         {
             bool actualizandoPromociones;
 
-            actualizandoPromociones = conect.ejecutarInsert("update Cartelera set FK_Cartelera_Pelicula = ");
+            actualizandoPromociones = conect.ejecutarInsert("update Promociones set idPromocion ="+idPromocion+" , Nombre = '"+Nombre+"', IdPelicula ="+idPelicula+ ",Restricciones='"+Restricciones+"' , FechaInicio = '"+Fechaini+"', FechaFin = '"+Fechafin+"' where idPromocion ="+idPromocion+" ");
             if (actualizandoPromociones)
             {
                 return true;

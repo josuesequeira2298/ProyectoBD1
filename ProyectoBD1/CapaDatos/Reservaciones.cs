@@ -27,7 +27,7 @@ namespace CapaDatos
         {
             bool modifireser;
 
-            modifireser = conect.ejecutarInsert("update");
+            modifireser = conect.ejecutarInsert("update Reservacion set Nombre_Cliente = '"+Nombre_Cliente+"', Cantidad_Asientos ="+Cantidad_Asientos+", Fecha = '"+Fehca+"', FK_idCartelera ="+cartelea+", FK_idPelicula ="+Cartelera_Pelicula_idPelicula+", FK_idSala ="+Cartelera_Sala_Tipo_Sala_idTipo_Sala+" where idReservacion ="+idReservacion+" ");
             if (modifireser)
             {
                 return true;
