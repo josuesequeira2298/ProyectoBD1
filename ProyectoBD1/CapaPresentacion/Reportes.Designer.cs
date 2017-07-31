@@ -132,6 +132,7 @@
             this.btnventfuncion.TabIndex = 8;
             this.btnventfuncion.Text = "Ventas por Función";
             this.btnventfuncion.UseVisualStyleBackColor = true;
+            this.btnventfuncion.Click += new System.EventHandler(this.btnventfuncion_Click);
             // 
             // btnventaspelicula
             // 
@@ -142,6 +143,7 @@
             this.btnventaspelicula.TabIndex = 9;
             this.btnventaspelicula.Text = "Ventas por Pelicula";
             this.btnventaspelicula.UseVisualStyleBackColor = true;
+            this.btnventaspelicula.Click += new System.EventHandler(this.btnventaspelicula_Click);
             // 
             // btnventastotales
             // 
@@ -152,6 +154,7 @@
             this.btnventastotales.TabIndex = 10;
             this.btnventastotales.Text = "Total Ventas";
             this.btnventastotales.UseVisualStyleBackColor = true;
+            this.btnventastotales.Click += new System.EventHandler(this.btnventastotales_Click);
             // 
             // btnventaslapso
             // 
@@ -162,6 +165,7 @@
             this.btnventaslapso.TabIndex = 11;
             this.btnventaslapso.Text = "Ventas por Lapso";
             this.btnventaslapso.UseVisualStyleBackColor = true;
+            this.btnventaslapso.Click += new System.EventHandler(this.btnventaslapso_Click);
             // 
             // label5
             // 
