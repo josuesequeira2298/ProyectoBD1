@@ -21,7 +21,7 @@ namespace CapaPresentacion
         {
             CapaNegocio.Reservacion reservacion = new CapaNegocio.Reservacion();
 
-            if (reservacion.reservar(Int32.Parse(txtidreservacion.Text), txtnombrecliente.Text, Int32.Parse(txtcantasientos.Text), txtfechareser.Text, Int32.Parse(txtidcartelera.Text), Int32.Parse(txtidpelicula.Text), Int32.Parse(txtidtiposala.Text) ))
+            if (reservacion.reservar(Int32.Parse(txtidreservacion.Text), txtnombrecliente.Text, Int32.Parse(txtcantasientos.Text), txtfechareser.Text, Int32.Parse(txtidcartelera.Text), Int32.Parse(txtidpelicula.Text), Int32.Parse(txtidtiposala.Text), Int32.Parse(txttipoentrada.Text)))
             {
                 MessageBox.Show("Reservación Agregada");
                 Limpiar();
@@ -52,7 +52,7 @@ namespace CapaPresentacion
         {
             CapaNegocio.Reservacion reservacion = new CapaNegocio.Reservacion();
 
-            if (reservacion.modifireser(Int32.Parse(txtidreservacion.Text), txtnombrecliente.Text, Int32.Parse(txtcantasientos.Text), txtfechareser.Text, Int32.Parse(txtidcartelera.Text), Int32.Parse(txtidpelicula.Text), Int32.Parse(txtidtiposala.Text)))
+            if (reservacion.modifireser(Int32.Parse(txtidreservacion.Text), txtnombrecliente.Text, Int32.Parse(txtcantasientos.Text), txtfechareser.Text, Int32.Parse(txtidcartelera.Text), Int32.Parse(txtidpelicula.Text), Int32.Parse(txtidtiposala.Text), Int32.Parse(txttipoentrada.Text)))
             {
                 MessageBox.Show("Reservación Modificada");
                 Limpiar();

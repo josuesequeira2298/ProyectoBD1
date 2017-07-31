@@ -16,5 +16,43 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
+
+        private void btnventaspelicula_Click(object sender, EventArgs e)
+        {
+            CapaNegocio.Reportes Reportes = new CapaNegocio.Reportes();
+            DataTable dtReportes = new DataTable();
+
+            dtReportes = Reportes.CargarVentasPeliculas();
+            txtventastotales.Text = "1";
+        }
+
+        private void btnventfuncion_Click(object sender, EventArgs e)
+        {
+            CapaNegocio.Reportes Reportes = new CapaNegocio.Reportes();
+            DataTable dtReportes = new DataTable();
+
+            dtReportes = Reportes.CargarVentasFuncion();
+            txtventastotales.Text = "2";
+        }
+
+        private void btnventaslapso_Click(object sender, EventArgs e)
+        {
+            CapaNegocio.Reportes Reportes = new CapaNegocio.Reportes();
+            DataTable dtReportes = new DataTable();
+
+            dtReportes = Reportes.CargarVentasLapso();
+            txtventastotales.Text = "3";
+        }
+
+        private void btnventastotales_Click(object sender, EventArgs e)
+        {
+            CapaNegocio.Reportes Reportes = new CapaNegocio.Reportes();
+            DataTable dtReportes = new DataTable();
+
+            dtReportes = Reportes.CargarVentasTotales();
+            txtventastotales.Text = "4";
+
+           
+        }
     }
 }

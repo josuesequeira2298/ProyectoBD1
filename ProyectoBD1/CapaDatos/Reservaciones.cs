@@ -11,11 +11,11 @@ namespace CapaDatos
     {
         clsConexion conect = new clsConexion();
 
-        public bool reservar(int idReservacion, string Nombre_Cliente, int Cantidad_Asientos, string Fehca, int cartelea, int Cartelera_Pelicula_idPelicula, int Cartelera_Sala_Tipo_Sala_idTipo_Sala)
+        public bool reservar(int idReservacion, string Nombre_Cliente, int Cantidad_Asientos, string Fehca, int cartelea, int Cartelera_Pelicula_idPelicula, int Cartelera_Sala_Tipo_Sala_idTipo_Sala, int tipoentrada)
         {
             bool creandoreservacion;
 
-            creandoreservacion = conect.ejecutarInsert("insert into Reservacion(idReservacion, Nombre_Cliente, Cantidad_Asientos, Fecha, FK_idCartelera, FK_idPelicula, FK_idSala) values("+idReservacion+", '"+Nombre_Cliente+"',"+Cantidad_Asientos+", '"+Fehca+"', "+cartelea +", "+ Cartelera_Pelicula_idPelicula + ", "+Cartelera_Sala_Tipo_Sala_idTipo_Sala+")");
+            creandoreservacion = conect.ejecutarInsert("insert into Reservacion(idReservacion, Nombre_Cliente, Cantidad_Asientos, Fecha, FK_idCartelera, FK_idPelicula, FK_idSala, FK_TipoEntrada) values("+idReservacion+", '"+Nombre_Cliente+"',"+Cantidad_Asientos+", '"+Fehca+"', "+cartelea +", "+ Cartelera_Pelicula_idPelicula + ", "+Cartelera_Sala_Tipo_Sala_idTipo_Sala+", "+tipoentrada+")");
 
             if (creandoreservacion)
             {
@@ -23,11 +23,11 @@ namespace CapaDatos
             }
             return false;
         }
-        public bool modifreservacion(int idReservacion, string Nombre_Cliente, int Cantidad_Asientos, string Fehca, int cartelea, int Cartelera_Pelicula_idPelicula, int Cartelera_Sala_Tipo_Sala_idTipo_Sala)
+        public bool modifreservacion(int idReservacion, string Nombre_Cliente, int Cantidad_Asientos, string Fehca, int cartelea, int Cartelera_Pelicula_idPelicula, int Cartelera_Sala_Tipo_Sala_idTipo_Sala, int tipoentrada)
         {
             bool modifireser;
 
-            modifireser = conect.ejecutarInsert("update Reservacion set Nombre_Cliente = '"+Nombre_Cliente+"', Cantidad_Asientos ="+Cantidad_Asientos+", Fecha = '"+Fehca+"', FK_idCartelera ="+cartelea+", FK_idPelicula ="+Cartelera_Pelicula_idPelicula+", FK_idSala ="+Cartelera_Sala_Tipo_Sala_idTipo_Sala+" where idReservacion ="+idReservacion+" ");
+            modifireser = conect.ejecutarInsert("update Reservacion set Nombre_Cliente = '"+Nombre_Cliente+"', Cantidad_Asientos ="+Cantidad_Asientos+", Fecha = '"+Fehca+"', FK_idCartelera ="+cartelea+", FK_idPelicula ="+Cartelera_Pelicula_idPelicula+", FK_idSala ="+Cartelera_Sala_Tipo_Sala_idTipo_Sala+", FK_TipoEntrada = "+tipoentrada+" where idReservacion ="+idReservacion+" ");
             if (modifireser)
             {
                 return true;

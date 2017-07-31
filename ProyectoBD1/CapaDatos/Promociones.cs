@@ -16,7 +16,7 @@ namespace CapaDatos
         {
             bool creandoPromociones;
 
-            creandoPromociones = conect.ejecutarInsert("insert into Promociones(idPromocion,Nombre,IdPelicula,Restricciones,FechaInicio,FechaFin) values ("+idPromocion+",'"+Nombre+"',"+idPelicula+",'"+Restricciones+"','"+Fechaini+"','"+Fechafin+"')");
+            creandoPromociones = conect.ejecutarInsert("insert into Promociones(idPromocion,Nombre,FK_idPelicula,Restricciones,FechaInicio,FechaFin) values ("+idPromocion+",'"+Nombre+"',"+idPelicula+",'"+Restricciones+"','"+Fechaini+"','"+Fechafin+"')");
 
             if (creandoPromociones)
             {
