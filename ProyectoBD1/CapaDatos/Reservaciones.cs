@@ -15,7 +15,7 @@ namespace CapaDatos
         {
             bool creandoreservacion;
 
-            creandoreservacion = conect.ejecutarInsert("insert into Reservacion(idReservacion, Nombre_Cliente, Cantidad_Asientos, Fecha, FK_idCartelera, FK_idPelicula, FK_idSala, FK_TipoEntrada) values("+idReservacion+", '"+Nombre_Cliente+"',"+Cantidad_Asientos+", '"+Fehca+"', "+cartelea +", "+ Cartelera_Pelicula_idPelicula + ", "+Cartelera_Sala_Tipo_Sala_idTipo_Sala+", "+tipoentrada+")");
+            creandoreservacion = conect.ejecutarInsert("insert into Reservacion(idReservacion, Nombre_Cliente, Cantidad_Asientos, Fecha, FK_idCartelera, FK_idPelicula, FK_idTipoSala, FK_idTipo_Entrada) values("+idReservacion+", '"+Nombre_Cliente+"',"+Cantidad_Asientos+", '"+Fehca+"', "+cartelea +", "+ Cartelera_Pelicula_idPelicula + ", "+Cartelera_Sala_Tipo_Sala_idTipo_Sala+", "+tipoentrada+")");
 
             if (creandoreservacion)
             {
@@ -27,7 +27,7 @@ namespace CapaDatos
         {
             bool modifireser;
 
-            modifireser = conect.ejecutarInsert("update Reservacion set Nombre_Cliente = '"+Nombre_Cliente+"', Cantidad_Asientos ="+Cantidad_Asientos+", Fecha = '"+Fehca+"', FK_idCartelera ="+cartelea+", FK_idPelicula ="+Cartelera_Pelicula_idPelicula+", FK_idSala ="+Cartelera_Sala_Tipo_Sala_idTipo_Sala+", FK_TipoEntrada = "+tipoentrada+" where idReservacion ="+idReservacion+" ");
+            modifireser = conect.ejecutarInsert("update Reservacion set Nombre_Cliente = '"+Nombre_Cliente+"', Cantidad_Asientos ="+Cantidad_Asientos+", Fecha = '"+Fehca+"', FK_idCartelera ="+cartelea+", FK_idPelicula ="+Cartelera_Pelicula_idPelicula+", FK_idTipoSala ="+Cartelera_Sala_Tipo_Sala_idTipo_Sala+", FK_idTipo_Entrada = "+tipoentrada+" where idReservacion ="+idReservacion+" ");
             if (modifireser)
             {
                 return true;

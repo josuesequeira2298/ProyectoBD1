@@ -16,7 +16,7 @@ namespace CapaDatos
         {
             bool creandocartelera;
 
-            creandocartelera = conect.ejecutarInsert("insert into Cartelera (idCartelera,FK_Cartelera_Pelicula,FK_Cartelera_Sala,Fecha,Hora_Inicio,Hora_Fin) values("+idCartelera+","+idPelicula+","+idsala+",'"+fecha+"','"+Horaini+"','"+Horafin +"')");
+            creandocartelera = conect.ejecutarInsert("insert into Cartelera (idCartelera,FK_idPelicula,FK_idSala,Fecha,Hora_Inicio,Hora_Fin) values("+idCartelera+","+idPelicula+","+idsala+",'"+fecha+"','"+Horaini+"','"+Horafin +"')");
 
             if (creandocartelera)
             {
@@ -46,7 +46,7 @@ namespace CapaDatos
         {
             bool actualizandoCartelera;
 
-            actualizandoCartelera = conect.ejecutarInsert("update Cartelera set FK_Cartelera_Pelicula = "+idPelicula+", FK_Cartelera_Sala = "+idsala+",Fecha='"+fecha+"',Hora_Inicio='"+Horaini+"', Hora_Fin='"+Horafin+"' where idCartelera="+idCartelera+"");
+            actualizandoCartelera = conect.ejecutarInsert("update Cartelera set FK_idPelicula = "+idPelicula+", FK_idSala = "+idsala+",Fecha='"+fecha+"',Hora_Inicio='"+Horaini+"', Hora_Fin='"+Horafin+"' where idCartelera="+idCartelera+"");
             if (actualizandoCartelera)
             {
                 return true;
