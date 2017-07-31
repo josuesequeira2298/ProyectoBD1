@@ -9,9 +9,9 @@ namespace CapaNegocio
 {
     public class Promociones
     {
-        public bool insertarPromociones(int idPromocion, string Nombre, int idPelicula, string Restricciones, string Fechaini, string Fechafin)
+        public bool insertarPromociones(int idPromocion, string Nombre, int idPelicula, string Restricciones, string Fechaini, string Fechafin, string Descripcion)
         {
-            return new CapaDatos.Promociones().insertarPromociones(idPromocion,Nombre,idPelicula, Restricciones, Fechaini, Fechafin);
+            return new CapaDatos.Promociones().insertarPromociones(idPromocion,Nombre,idPelicula, Restricciones, Fechaini, Fechafin, Descripcion);
 
         }
 
@@ -27,9 +27,9 @@ namespace CapaNegocio
         }
 
 
-        public bool actualizarPromociones(int idPromocion, string Nombre, int idPelicula, string Restricciones, string Fechaini, string Fechafin)
+        public bool actualizarPromociones(int idPromocion, string Nombre, int idPelicula, string Restricciones, string Fechaini, string Fechafin, string Descripcion)
         {
-            return new CapaDatos.Promociones().actualizarPromociones(idPromocion, Nombre, idPelicula, Restricciones, Fechaini, Fechafin);
+            return new CapaDatos.Promociones().actualizarPromociones(idPromocion, Nombre, idPelicula, Restricciones, Fechaini, Fechafin, Descripcion);
         }
         public bool eliminarPromociones(int idPromociones)
         {

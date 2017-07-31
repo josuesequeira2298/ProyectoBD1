@@ -40,6 +40,7 @@ namespace CapaPresentacion
             txtnombrecliente.Text = " ";
             txtcantasientos.Text = " ";
             txtfechareser.Text = " ";
+            txttipoentrada.Text = " ";
          
         }
 
