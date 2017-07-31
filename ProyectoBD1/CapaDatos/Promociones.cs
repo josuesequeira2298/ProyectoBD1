@@ -26,7 +26,7 @@ namespace CapaDatos
         }
 
 
-        public DataTable CargarPromociones(int idPromociones)
+        public DataTable CargarPromocion(int idPromociones)
         {
             CapaDatos.clsConexion conecta = new CapaDatos.clsConexion();
             DataTable dtPromociones;
