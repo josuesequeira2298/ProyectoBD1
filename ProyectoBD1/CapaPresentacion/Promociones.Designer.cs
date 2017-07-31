@@ -132,6 +132,7 @@
             this.btnconsultar.TabIndex = 9;
             this.btnconsultar.Text = "Consultar";
             this.btnconsultar.UseVisualStyleBackColor = true;
+            this.btnconsultar.Click += new System.EventHandler(this.btnconsultar_Click);
             // 
             // label5
             // 
@@ -173,6 +174,7 @@
             this.btnborar.TabIndex = 14;
             this.btnborar.Text = "Borar";
             this.btnborar.UseVisualStyleBackColor = true;
+            this.btnborar.Click += new System.EventHandler(this.btnborar_Click);
             // 
             // btnactualizar
             // 
@@ -182,6 +184,7 @@
             this.btnactualizar.TabIndex = 15;
             this.btnactualizar.Text = "Actualizar";
             this.btnactualizar.UseVisualStyleBackColor = true;
+            this.btnactualizar.Click += new System.EventHandler(this.btnactualizar_Click);
             // 
             // dtgpromociones
             // 
@@ -199,6 +202,7 @@
             this.btnlimpiar.TabIndex = 17;
             this.btnlimpiar.Text = "Limpiar";
             this.btnlimpiar.UseVisualStyleBackColor = true;
+            this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
             // 
             // btnconsultartodo
             // 
@@ -208,6 +212,7 @@
             this.btnconsultartodo.TabIndex = 18;
             this.btnconsultartodo.Text = "Consultar Todo";
             this.btnconsultartodo.UseVisualStyleBackColor = true;
+            this.btnconsultartodo.Click += new System.EventHandler(this.btnconsultartodo_Click);
             // 
             // Promociones
             // 
