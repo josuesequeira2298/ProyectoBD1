@@ -43,6 +43,7 @@
     <Compile Include="Cartelera.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Peliculas.cs" />
+    <Compile Include="Promociones.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sala.cs" />
     <Compile Include="Reservacion.cs" />

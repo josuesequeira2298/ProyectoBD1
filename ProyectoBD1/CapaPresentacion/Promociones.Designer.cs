@@ -42,8 +42,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtfechaini = new System.Windows.Forms.TextBox();
             this.txtfechafin = new System.Windows.Forms.TextBox();
-            this.btninhabilitar = new System.Windows.Forms.Button();
+            this.btnborar = new System.Windows.Forms.Button();
             this.btnactualizar = new System.Windows.Forms.Button();
+            this.dtgpromociones = new System.Windows.Forms.DataGridView();
+            this.btnlimpiar = new System.Windows.Forms.Button();
+            this.btnconsultartodo = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgpromociones)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -112,7 +116,7 @@
             // 
             // btnagregar
             // 
-            this.btnagregar.Location = new System.Drawing.Point(31, 222);
+            this.btnagregar.Location = new System.Drawing.Point(241, 15);
             this.btnagregar.Name = "btnagregar";
             this.btnagregar.Size = new System.Drawing.Size(75, 23);
             this.btnagregar.TabIndex = 8;
@@ -122,7 +126,7 @@
             // 
             // btnconsultar
             // 
-            this.btnconsultar.Location = new System.Drawing.Point(125, 222);
+            this.btnconsultar.Location = new System.Drawing.Point(352, 15);
             this.btnconsultar.Name = "btnconsultar";
             this.btnconsultar.Size = new System.Drawing.Size(75, 23);
             this.btnconsultar.TabIndex = 9;
@@ -161,31 +165,60 @@
             this.txtfechafin.Size = new System.Drawing.Size(100, 20);
             this.txtfechafin.TabIndex = 13;
             // 
-            // btninhabilitar
+            // btnborar
             // 
-            this.btninhabilitar.Location = new System.Drawing.Point(31, 263);
-            this.btninhabilitar.Name = "btninhabilitar";
-            this.btninhabilitar.Size = new System.Drawing.Size(75, 23);
-            this.btninhabilitar.TabIndex = 14;
-            this.btninhabilitar.Text = "Inhabilitar";
-            this.btninhabilitar.UseVisualStyleBackColor = true;
+            this.btnborar.Location = new System.Drawing.Point(241, 77);
+            this.btnborar.Name = "btnborar";
+            this.btnborar.Size = new System.Drawing.Size(75, 23);
+            this.btnborar.TabIndex = 14;
+            this.btnborar.Text = "Borar";
+            this.btnborar.UseVisualStyleBackColor = true;
             // 
             // btnactualizar
             // 
-            this.btnactualizar.Location = new System.Drawing.Point(125, 263);
+            this.btnactualizar.Location = new System.Drawing.Point(352, 77);
             this.btnactualizar.Name = "btnactualizar";
             this.btnactualizar.Size = new System.Drawing.Size(75, 23);
             this.btnactualizar.TabIndex = 15;
             this.btnactualizar.Text = "Actualizar";
             this.btnactualizar.UseVisualStyleBackColor = true;
             // 
+            // dtgpromociones
+            // 
+            this.dtgpromociones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgpromociones.Location = new System.Drawing.Point(12, 228);
+            this.dtgpromociones.Name = "dtgpromociones";
+            this.dtgpromociones.Size = new System.Drawing.Size(415, 150);
+            this.dtgpromociones.TabIndex = 16;
+            // 
+            // btnlimpiar
+            // 
+            this.btnlimpiar.Location = new System.Drawing.Point(241, 140);
+            this.btnlimpiar.Name = "btnlimpiar";
+            this.btnlimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnlimpiar.TabIndex = 17;
+            this.btnlimpiar.Text = "Limpiar";
+            this.btnlimpiar.UseVisualStyleBackColor = true;
+            // 
+            // btnconsultartodo
+            // 
+            this.btnconsultartodo.Location = new System.Drawing.Point(340, 140);
+            this.btnconsultartodo.Name = "btnconsultartodo";
+            this.btnconsultartodo.Size = new System.Drawing.Size(87, 23);
+            this.btnconsultartodo.TabIndex = 18;
+            this.btnconsultartodo.Text = "Consultar Todo";
+            this.btnconsultartodo.UseVisualStyleBackColor = true;
+            // 
             // Promociones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(240, 303);
+            this.ClientSize = new System.Drawing.Size(439, 390);
+            this.Controls.Add(this.btnconsultartodo);
+            this.Controls.Add(this.btnlimpiar);
+            this.Controls.Add(this.dtgpromociones);
             this.Controls.Add(this.btnactualizar);
-            this.Controls.Add(this.btninhabilitar);
+            this.Controls.Add(this.btnborar);
             this.Controls.Add(this.txtfechafin);
             this.Controls.Add(this.txtfechaini);
             this.Controls.Add(this.label6);
@@ -202,6 +235,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Promociones";
             this.Text = "Promociones";
+            ((System.ComponentModel.ISupportInitialize)(this.dtgpromociones)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,7 +257,10 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtfechaini;
         private System.Windows.Forms.TextBox txtfechafin;
-        private System.Windows.Forms.Button btninhabilitar;
+        private System.Windows.Forms.Button btnborar;
         private System.Windows.Forms.Button btnactualizar;
+        private System.Windows.Forms.DataGridView dtgpromociones;
+        private System.Windows.Forms.Button btnlimpiar;
+        private System.Windows.Forms.Button btnconsultartodo;
     }
 }
