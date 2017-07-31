@@ -46,12 +46,15 @@
             this.txtfechafin = new System.Windows.Forms.TextBox();
             this.txttiquetes = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnextra = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 25);
+            this.label1.Location = new System.Drawing.Point(25, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 13);
             this.label1.TabIndex = 0;
@@ -60,7 +63,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 62);
+            this.label2.Location = new System.Drawing.Point(25, 55);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 1;
@@ -69,7 +72,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(25, 102);
+            this.label3.Location = new System.Drawing.Point(25, 81);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 2;
@@ -78,7 +81,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(25, 333);
+            this.label4.Location = new System.Drawing.Point(522, 25);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 13);
             this.label4.TabIndex = 3;
@@ -86,35 +89,35 @@
             // 
             // txtidsala
             // 
-            this.txtidsala.Location = new System.Drawing.Point(143, 22);
+            this.txtidsala.Location = new System.Drawing.Point(119, 22);
             this.txtidsala.Name = "txtidsala";
             this.txtidsala.Size = new System.Drawing.Size(100, 20);
             this.txtidsala.TabIndex = 4;
             // 
             // txtidcartelera
             // 
-            this.txtidcartelera.Location = new System.Drawing.Point(143, 59);
+            this.txtidcartelera.Location = new System.Drawing.Point(119, 48);
             this.txtidcartelera.Name = "txtidcartelera";
             this.txtidcartelera.Size = new System.Drawing.Size(100, 20);
             this.txtidcartelera.TabIndex = 5;
             // 
             // txtidpelicula
             // 
-            this.txtidpelicula.Location = new System.Drawing.Point(143, 99);
+            this.txtidpelicula.Location = new System.Drawing.Point(119, 74);
             this.txtidpelicula.Name = "txtidpelicula";
             this.txtidpelicula.Size = new System.Drawing.Size(100, 20);
             this.txtidpelicula.TabIndex = 6;
             // 
             // txtventastotales
             // 
-            this.txtventastotales.Location = new System.Drawing.Point(143, 326);
+            this.txtventastotales.Location = new System.Drawing.Point(511, 51);
             this.txtventastotales.Name = "txtventastotales";
             this.txtventastotales.Size = new System.Drawing.Size(100, 20);
             this.txtventastotales.TabIndex = 7;
             // 
             // btnventfuncion
             // 
-            this.btnventfuncion.Location = new System.Drawing.Point(293, 52);
+            this.btnventfuncion.Location = new System.Drawing.Point(163, 116);
             this.btnventfuncion.Name = "btnventfuncion";
             this.btnventfuncion.Size = new System.Drawing.Size(114, 23);
             this.btnventfuncion.TabIndex = 8;
@@ -123,7 +126,7 @@
             // 
             // btnventaspelicula
             // 
-            this.btnventaspelicula.Location = new System.Drawing.Point(293, 97);
+            this.btnventaspelicula.Location = new System.Drawing.Point(28, 116);
             this.btnventaspelicula.Name = "btnventaspelicula";
             this.btnventaspelicula.Size = new System.Drawing.Size(114, 23);
             this.btnventaspelicula.TabIndex = 9;
@@ -132,7 +135,7 @@
             // 
             // btnventastotales
             // 
-            this.btnventastotales.Location = new System.Drawing.Point(293, 142);
+            this.btnventastotales.Location = new System.Drawing.Point(433, 116);
             this.btnventastotales.Name = "btnventastotales";
             this.btnventastotales.Size = new System.Drawing.Size(114, 23);
             this.btnventastotales.TabIndex = 10;
@@ -141,7 +144,7 @@
             // 
             // btnventaslapso
             // 
-            this.btnventaslapso.Location = new System.Drawing.Point(293, 191);
+            this.btnventaslapso.Location = new System.Drawing.Point(299, 116);
             this.btnventaslapso.Name = "btnventaslapso";
             this.btnventaslapso.Size = new System.Drawing.Size(114, 23);
             this.btnventaslapso.TabIndex = 11;
@@ -151,7 +154,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(25, 142);
+            this.label5.Location = new System.Drawing.Point(238, 29);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 13);
             this.label5.TabIndex = 12;
@@ -160,7 +163,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(25, 180);
+            this.label6.Location = new System.Drawing.Point(238, 51);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(54, 13);
             this.label6.TabIndex = 13;
@@ -168,21 +171,21 @@
             // 
             // txtfechaini
             // 
-            this.txtfechaini.Location = new System.Drawing.Point(143, 139);
+            this.txtfechaini.Location = new System.Drawing.Point(358, 22);
             this.txtfechaini.Name = "txtfechaini";
             this.txtfechaini.Size = new System.Drawing.Size(100, 20);
             this.txtfechaini.TabIndex = 14;
             // 
             // txtfechafin
             // 
-            this.txtfechafin.Location = new System.Drawing.Point(143, 177);
+            this.txtfechafin.Location = new System.Drawing.Point(358, 48);
             this.txtfechafin.Name = "txtfechafin";
             this.txtfechafin.Size = new System.Drawing.Size(100, 20);
             this.txtfechafin.TabIndex = 15;
             // 
             // txttiquetes
             // 
-            this.txttiquetes.Location = new System.Drawing.Point(143, 219);
+            this.txttiquetes.Location = new System.Drawing.Point(358, 74);
             this.txttiquetes.Name = "txttiquetes";
             this.txttiquetes.Size = new System.Drawing.Size(100, 20);
             this.txttiquetes.TabIndex = 16;
@@ -190,17 +193,36 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(25, 222);
+            this.label7.Location = new System.Drawing.Point(238, 77);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(95, 13);
             this.label7.TabIndex = 17;
             this.label7.Text = "Tiquetes Vendidos";
             // 
+            // btnextra
+            // 
+            this.btnextra.Location = new System.Drawing.Point(570, 115);
+            this.btnextra.Name = "btnextra";
+            this.btnextra.Size = new System.Drawing.Size(75, 23);
+            this.btnextra.TabIndex = 18;
+            this.btnextra.Text = "Extra";
+            this.btnextra.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(28, 162);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(617, 198);
+            this.dataGridView1.TabIndex = 19;
+            // 
             // Reportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(424, 372);
+            this.ClientSize = new System.Drawing.Size(656, 372);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnextra);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txttiquetes);
             this.Controls.Add(this.txtfechafin);
@@ -221,6 +243,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Reportes";
             this.Text = "Reportes";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,5 +269,7 @@
         private System.Windows.Forms.TextBox txtfechafin;
         private System.Windows.Forms.TextBox txttiquetes;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnextra;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
