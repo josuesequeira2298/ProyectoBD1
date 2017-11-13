@@ -59,6 +59,7 @@ namespace CapaDatos
             DataTable dtSalas;
             dtSalas = conecta.ejecutar("select * from Sala");
             return dtSalas;
+
         }
     }
 }

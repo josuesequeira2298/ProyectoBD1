@@ -109,5 +109,10 @@ namespace CapaPresentacion
                 MessageBox.Show("Error Desconocido");
             }
         }
+
+        private void dtgSalas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

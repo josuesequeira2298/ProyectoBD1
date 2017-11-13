@@ -147,16 +147,17 @@
             // 
             this.dtgSalas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgSalas.Location = new System.Drawing.Point(16, 136);
-            this.dtgSalas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtgSalas.Margin = new System.Windows.Forms.Padding(2);
             this.dtgSalas.Name = "dtgSalas";
             this.dtgSalas.RowTemplate.Height = 24;
             this.dtgSalas.Size = new System.Drawing.Size(443, 271);
             this.dtgSalas.TabIndex = 13;
+            this.dtgSalas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgSalas_CellContentClick);
             // 
             // btnEliminar
             // 
             this.btnEliminar.Location = new System.Drawing.Point(277, 41);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(74, 24);
             this.btnEliminar.TabIndex = 14;
